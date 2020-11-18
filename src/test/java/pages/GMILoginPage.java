@@ -20,10 +20,8 @@ public class GMILoginPage {
         public WebElement CanselButton;
         @FindBy (xpath = "//a[@href='/account/reset/request']")
         public WebElement  Did_you_forget_your_password;
-        @FindBy (xpath = "//a[@href='/account/register']")
-        public WebElement Register_a_new_account;
-        @FindBy (xpath = "//a[@href='/account/register']")
-        public WebElement aaaaa;
+
+
 
 
 
