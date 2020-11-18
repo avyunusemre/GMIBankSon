@@ -1,31 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.881">
-<testcase classname="Address of customer can be created" name="Leave the State textbox empty" time="14.465">
-<failure message="" type="java.lang.AssertionError"><![CDATA[Given User is on GMIBank Login page.........................................passed
-And user provide valid username "Team5Employee".............................passed
-And user provide valid password "employeeTeam5".............................passed
-And user click sign in button...............................................passed
-And user clicks on My Operations............................................passed
-And user clicks on Manage Customer..........................................passed
-And user clicks on Create a new Customer....................................passed
-And user fills in the SSN textbox "352-34-4678".............................passed
-And user clicks on the Search button........................................passed
-And user fills in the Middle Initial textbox with valid credential..........passed
-And user fills in the Phone Number textbox with valid credential............passed
-And user fills in the Zip Code text box with valid credential...............passed
-Given user fills in the City textbox with valid credential "Dakota City"....passed
-And user selects a country from Country dropdown............................passed
-And user selects a account from Account menu "SavingT5".....................passed
-And user clicks on the save button..........................................passed
-Then user sees the error message............................................failed
-
-StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.US10Negative_StepDefinitions.user_sees_the_error_message(US10Negative_StepDefinitions.java:115)
-	at ✽.user sees the error message(file:///C:/Users/deuav/IdeaProjects/GMIBankTeam5/src/test/resources/features/US10_NegativeAdress.feature:70)
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="143.859">
+<testcase classname="User Info being populated" name="US_006 TC_001" time="30.444">
+<system-out><![CDATA[Given User is on GMIBank Login page.........................................passed
+When user provide valid username "Team5Employee"............................passed
+When user provide valid password "employeeTeam5"............................passed
+When user click sign in button..............................................passed
+Given Click to element with element name....................................passed
+Then Compare text using element name........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info being populated" name="US_006 TC_001 2" time="30.137">
+<system-out><![CDATA[Given User is on GMIBank Login page.........................................passed
+When user provide valid username "Team5User"................................passed
+When user provide valid password "userTeam5"................................passed
+When user click sign in button..............................................passed
+Given Click to element with element name....................................passed
+Then Compare text using element name........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info being populated" name="US_006 TC_001 3" time="27.949">
+<system-out><![CDATA[Given User is on GMIBank Login page.........................................passed
+When user provide valid username "Team5Customer"............................passed
+When user provide valid password "customerTeam5"............................passed
+When user click sign in button..............................................passed
+Given Click to element with element name....................................passed
+Then Compare text using element name........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info being populated" name="US_006 TC_001 4" time="28.631">
+<system-out><![CDATA[Given User is on GMIBank Login page.........................................passed
+When user provide valid username "Team5Admin"...............................passed
+When user provide valid password "adminTeam5"...............................passed
+When user click sign in button..............................................passed
+Given Click to element with element name....................................passed
+Then Compare text using element name........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="User Info being populated" name="US_006 TC_001 5" time="26.027">
+<system-out><![CDATA[Given User is on GMIBank Login page.........................................passed
+When user provide valid username "Team5Manager".............................passed
+When user provide valid password "managerTeam5".............................passed
+When user click sign in button..............................................passed
+Given Click to element with element name....................................passed
+Then Compare text using element name........................................passed
+]]></system-out>
 </testcase>
 </testsuite>
