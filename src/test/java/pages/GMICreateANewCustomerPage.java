@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class GMICreateANewCustomerPage {
 
     public GMICreateANewCustomerPage() {
@@ -72,7 +74,18 @@ public class GMICreateANewCustomerPage {
     public WebElement saveButton;
 
     @FindBy(xpath = "//*[@id='app-view-container']/div[1]/div/div/div/div[2]/div/form/div[9]/div/div")
-    public WebElement feedBackMessage;
+    public WebElement feedBackAdress;
+
+    @FindBy(xpath = "//*[@id='app-view-container']/div[1]/div/div/div/div[2]/div/form/div[10]/div/div")
+    public WebElement feedBackCity;
+
+    @FindBy(xpath = "//*[@id='root']/div/div/div[1]/div/div[2]/div[1]")
+    public WebElement errorMessage;
+
+    @FindBy(xpath = "//*[@id='root']/div/div/div[1]/div/div")
+    public WebElement successMessage;
+
+
 
 
 }
