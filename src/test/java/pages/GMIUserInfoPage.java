@@ -25,7 +25,6 @@ public class GMIUserInfoPage {
     @FindBy(id="account-menu")
     private WebElement accountMenu;
 
-
     @FindBy(xpath="//span[text()='Sign in']")
     private WebElement signIn;
 
@@ -180,6 +179,8 @@ public class GMIUserInfoPage {
                 break;
         }
 
+        Driver.waitForVisibility(currentElement,15);
+
         Select select = new Select(currentElement);
 
         List<WebElement> optionslist=new ArrayList<>();
@@ -201,7 +202,7 @@ public class GMIUserInfoPage {
 
     public static void clickFunction(WebElement element) {
 
-        waitUntilClickable(element);
+        Driver.waitForClickablility(element,15);
         Driver.scrollToElement(element);
         element.click();
 
@@ -210,7 +211,7 @@ public class GMIUserInfoPage {
 
     public static void sendKeysFunction(WebElement element, String value) {
 
-      //  waitUntilVisible(element);
+        Driver.waitForVisibility(element,15);
         Driver.scrollToElement(element);
         element.clear();
         element.sendKeys(value);
@@ -219,24 +220,9 @@ public class GMIUserInfoPage {
 
 
 
-
-    public static  void waitUntilClickable(WebElement element) {
-        WebDriverWait wait  = new WebDriverWait(Driver.getDriver(), 10);
-        wait.until(ExpectedConditions.refreshed( ExpectedConditions.elementToBeClickable(element)));
-
-
-    }
-
-    public  static void waitUntilVisible(WebElement element) {
-        WebDriverWait wait  = new WebDriverWait(Driver.getDriver(), 10);
-        wait.until(ExpectedConditions.visibilityOf(element));
-
-    }
-
     public static void verifyElement(WebElement element,String text,String textorValue ){
 
-        waitUntilVisible(element);
-        System.out.println(text);
+        Driver.waitForVisibility(element,15);
 
         switch (textorValue){
 

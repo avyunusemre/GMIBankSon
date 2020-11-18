@@ -23,10 +23,8 @@ public class US06_StepDefinitions {
 
         }
 
-
-
-
     }
+
 
     @Then("Compare text using element name")
     public void compareTextUsingElementName(DataTable elements) {
@@ -42,10 +40,7 @@ public class US06_StepDefinitions {
 
         }
 
-
-
     }
-
 
 
     @Then("Check drowdown options")
@@ -75,7 +70,6 @@ public class US06_StepDefinitions {
 
         }
 
-
-
     }
+
 }

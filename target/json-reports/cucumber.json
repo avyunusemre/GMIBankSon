@@ -3,15 +3,28 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "",
+        "start_timestamp": "2020-11-18T09:21:37.493Z",
+        "line": 22,
+        "name": "US_006 TC_001",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "user-info-being-populated;us-006-tc-001;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1069000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 19448000000,
+              "duration": 17013000000,
               "status": "passed"
             },
             "line": 5,
@@ -23,15 +36,15 @@
           },
           {
             "result": {
-              "duration": 164000000,
+              "duration": 93000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user provide valid username \"Team5User\"",
+            "name": "user provide valid username \"Team5Employee\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Team5User\"",
+                  "val": "\"Team5Employee\"",
                   "offset": 28
                 }
               ],
@@ -41,15 +54,15 @@
           },
           {
             "result": {
-              "duration": 132000000,
+              "duration": 112000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user provide valid password \"userTeam5\"",
+            "name": "user provide valid password \"employeeTeam5\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"userTeam5\"",
+                  "val": "\"employeeTeam5\"",
                   "offset": 28
                 }
               ],
@@ -59,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 209000000,
+              "duration": 79000000,
               "status": "passed"
             },
             "line": 8,
@@ -71,44 +84,10 @@
           },
           {
             "result": {
-              "duration": 787000000,
+              "duration": 910000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "verify  username when user logged in",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.verify_username_when_user_logged_in()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-17T23:26:25.674Z",
-        "line": 12,
-        "name": "US_006 TC_001",
-        "description": "",
-        "id": "user-info-functionality;us-006-tc-001",
-        "after": [
-          {
-            "result": {
-              "duration": 1023000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 496000000,
-              "status": "passed"
-            },
-            "line": 14,
+            "line": 10,
             "name": "Click to element with element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
@@ -129,10 +108,170 @@
           },
           {
             "result": {
-              "duration": 10283000000,
+              "duration": 11062000000,
               "status": "passed"
             },
-            "line": 17,
+            "line": 13,
+            "name": "Compare text using element name",
+            "match": {
+              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "settingsTitle",
+                  "User settings",
+                  "text"
+                ]
+              },
+              {
+                "cells": [
+                  "firstName",
+                  "Employee",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "Team5",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "team5employee@gmail.com",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "languagedropd",
+                  "English",
+                  "selectedDrobdown"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US06_TC_01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T09:22:07.950Z",
+        "line": 23,
+        "name": "US_006 TC_001",
+        "description": "",
+        "id": "user-info-being-populated;us-006-tc-001;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1040000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 19944000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is on GMIBank Login page",
+            "match": {
+              "location": "stepdefinitions.US16_StepDefinitions.user_is_on_GMIBank_Login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provide valid username \"Team5User\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Team5User\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_username(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 95000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provide valid password \"userTeam5\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"userTeam5\"",
+                  "offset": 28
+                }
+              ],
+              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_password(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 72000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click sign in button",
+            "match": {
+              "location": "stepdefinitions.US16_StepDefinitions.user_click_sign_in_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1103000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click to element with element name",
+            "match": {
+              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "accountMenu"
+                ]
+              },
+              {
+                "cells": [
+                  "userInfo"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7805000000,
+              "status": "passed"
+            },
+            "line": 13,
             "name": "Compare text using element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
@@ -179,20 +318,33 @@
         ],
         "tags": [
           {
-            "name": "@US06"
+            "name": "@US06_TC_01"
           }
         ]
       },
       {
-        "line": 4,
-        "name": "",
+        "start_timestamp": "2020-11-18T09:22:38.110Z",
+        "line": 24,
+        "name": "US_006 TC_001",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "user-info-being-populated;us-006-tc-001;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1095000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 15592000000,
+              "duration": 16970000000,
               "status": "passed"
             },
             "line": 5,
@@ -204,15 +356,15 @@
           },
           {
             "result": {
-              "duration": 77000000,
+              "duration": 89000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user provide valid username \"Team5User\"",
+            "name": "user provide valid username \"Team5Customer\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Team5User\"",
+                  "val": "\"Team5Customer\"",
                   "offset": 28
                 }
               ],
@@ -222,15 +374,15 @@
           },
           {
             "result": {
-              "duration": 91000000,
+              "duration": 112000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user provide valid password \"userTeam5\"",
+            "name": "user provide valid password \"customerTeam5\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"userTeam5\"",
+                  "val": "\"customerTeam5\"",
                   "offset": 28
                 }
               ],
@@ -240,7 +392,7 @@
           },
           {
             "result": {
-              "duration": 73000000,
+              "duration": 72000000,
               "status": "passed"
             },
             "line": 8,
@@ -252,28 +404,94 @@
           },
           {
             "result": {
-              "duration": 1138000000,
+              "duration": 1018000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "verify  username when user logged in",
+            "line": 10,
+            "name": "Click to element with element name",
             "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.verify_username_when_user_logged_in()"
+              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
             },
-            "keyword": "When "
+            "rows": [
+              {
+                "cells": [
+                  "accountMenu"
+                ]
+              },
+              {
+                "cells": [
+                  "userInfo"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8588000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Compare text using element name",
+            "match": {
+              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "settingsTitle",
+                  "User settings",
+                  "text"
+                ]
+              },
+              {
+                "cells": [
+                  "firstName",
+                  "Team5",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "Customer",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "team5cust@gmail.com",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "languagedropd",
+                  "English",
+                  "selectedDrobdown"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US06_TC_01"
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-17T23:26:58.361Z",
+        "start_timestamp": "2020-11-18T09:23:06.072Z",
         "line": 25,
-        "name": "US_006 TC_002",
+        "name": "US_006 TC_001",
         "description": "",
-        "id": "user-info-functionality;us-006-tc-002",
+        "id": "user-info-being-populated;us-006-tc-001;;5",
         "after": [
           {
             "result": {
-              "duration": 1011000000,
+              "duration": 1045000000,
               "status": "passed"
             },
             "match": {
@@ -282,1125 +500,11 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 284000000,
-              "status": "passed"
-            },
-            "line": 26,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "accountMenu"
-                ]
-              },
-              {
-                "cells": [
-                  "userInfo"
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 9003000000,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "Check drowdown options",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.checkDrowdownOptions(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "languagedropd"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US06"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 18347000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on GMIBank Login page",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.user_is_on_GMIBank_Login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 76000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user provide valid username \"Team5User\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Team5User\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 101000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid password \"userTeam5\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"userTeam5\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 71000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click sign in button",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 663000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify  username when user logged in",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.verify_username_when_user_logged_in()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-17T23:27:25.666Z",
-        "line": 32,
-        "name": "US_006 TC_003",
-        "description": "",
-        "id": "user-info-functionality;us-006-tc-003",
-        "after": [
-          {
-            "result": {
-              "duration": 1084000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 281000000,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "accountMenu"
-                ]
-              },
-              {
-                "cells": [
-                  "userInfo"
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8568000000,
-              "status": "passed"
-            },
-            "line": 37,
-            "name": "Send text to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.sendTextToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "firstName",
-                  "User12omer"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 134000000,
-              "status": "passed"
-            },
-            "line": 39,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "saveButton"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 895000000,
-              "status": "passed"
-            },
-            "line": 41,
-            "name": "Compare text using element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "settingsSaveMessage",
-                  "Settings saved!",
-                  "text"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 241000000,
-              "status": "passed"
-            },
-            "line": 43,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "accountMenu"
-                ]
-              },
-              {
-                "cells": [
-                  "userInfo"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 99000000,
-              "status": "passed"
-            },
-            "line": 46,
-            "name": "Compare text using element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "firstName",
-                  "User12omer",
-                  "value"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US06"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 18409000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on GMIBank Login page",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.user_is_on_GMIBank_Login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 77000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user provide valid username \"Team5User\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Team5User\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 94000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid password \"userTeam5\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"userTeam5\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 70000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click sign in button",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 775000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify  username when user logged in",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.verify_username_when_user_logged_in()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-17T23:27:56.242Z",
-        "line": 50,
-        "name": "US_006 TC_004",
-        "description": "",
-        "id": "user-info-functionality;us-006-tc-004",
-        "after": [
-          {
-            "result": {
-              "duration": 1037000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 356000000,
-              "status": "passed"
-            },
-            "line": 52,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "accountMenu"
-                ]
-              },
-              {
-                "cells": [
-                  "userInfo"
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7834000000,
-              "status": "passed"
-            },
-            "line": 55,
-            "name": "Send text to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.sendTextToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "lastName",
-                  "Team5omer"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 140000000,
-              "status": "passed"
-            },
-            "line": 57,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "saveButton"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 899000000,
-              "status": "passed"
-            },
-            "line": 59,
-            "name": "Compare text using element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "settingsSaveMessage",
-                  "Settings saved!",
-                  "text"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 280000000,
-              "status": "passed"
-            },
-            "line": 61,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "accountMenu"
-                ]
-              },
-              {
-                "cells": [
-                  "userInfo"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 85000000,
-              "status": "passed"
-            },
-            "line": 64,
-            "name": "Compare text using element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "lastName",
-                  "Team5omer",
-                  "value"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US06"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 18569000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on GMIBank Login page",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.user_is_on_GMIBank_Login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 80000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user provide valid username \"Team5User\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Team5User\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 100000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid password \"userTeam5\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"userTeam5\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 67000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click sign in button",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 766000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify  username when user logged in",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.verify_username_when_user_logged_in()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-17T23:28:26.309Z",
-        "line": 67,
-        "name": "US_006 TC_005",
-        "description": "",
-        "id": "user-info-functionality;us-006-tc-005",
-        "after": [
-          {
-            "result": {
-              "duration": 1064000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 310000000,
-              "status": "passed"
-            },
-            "line": 69,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "accountMenu"
-                ]
-              },
-              {
-                "cells": [
-                  "userInfo"
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 8717000000,
-              "status": "passed"
-            },
-            "line": 72,
-            "name": "Send text to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.sendTextToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "email",
-                  "team5useromer@gmail.com"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 145000000,
-              "status": "passed"
-            },
-            "line": 74,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "saveButton"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 844000000,
-              "status": "passed"
-            },
-            "line": 76,
-            "name": "Compare text using element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "settingsSaveMessage",
-                  "Settings saved!",
-                  "text"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 223000000,
-              "status": "passed"
-            },
-            "line": 78,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "accountMenu"
-                ]
-              },
-              {
-                "cells": [
-                  "userInfo"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 83000000,
-              "status": "passed"
-            },
-            "line": 81,
-            "name": "Compare text using element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "email",
-                  "team5useromer@gmail.com",
-                  "value"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US06"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 15709000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on GMIBank Login page",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.user_is_on_GMIBank_Login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 77000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user provide valid username \"Team5User\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Team5User\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 98000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid password \"userTeam5\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"userTeam5\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 76000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click sign in button",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 739000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify  username when user logged in",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.verify_username_when_user_logged_in()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-17T23:28:57.287Z",
-        "line": 86,
-        "name": "US_007 TC_001",
-        "description": "",
-        "id": "user-info-functionality;us-007-tc-001",
-        "after": [
-          {
-            "result": {
-              "duration": 1062000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 326000000,
-              "status": "passed"
-            },
-            "line": 88,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "accountMenu"
-                ]
-              },
-              {
-                "cells": [
-                  "userInfo"
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 7630000000,
-              "status": "passed"
-            },
-            "line": 91,
-            "name": "Send text to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.sendTextToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "email",
-                  "team5useromergmail"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 107000000,
-              "status": "passed"
-            },
-            "line": 93,
-            "name": "Compare text using element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "invalidFeedback",
-                  "This field is invalid",
-                  "text"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US06"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 15823000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "User is on GMIBank Login page",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.user_is_on_GMIBank_Login_page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 76000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user provide valid username \"Team5User\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Team5User\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_username(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 95000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user provide valid password \"userTeam5\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"userTeam5\"",
-                  "offset": 28
-                }
-              ],
-              "location": "stepdefinitions.US16_StepDefinitions.user_provide_valid_password(java.lang.String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 67000000,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user click sign in button",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.user_click_sign_in_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 729000000,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "verify  username when user logged in",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.verify_username_when_user_logged_in()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-17T23:29:23.130Z",
-        "line": 97,
-        "name": "US_007 TC_002",
-        "description": "",
-        "id": "user-info-functionality;us-007-tc-002",
-        "after": [
-          {
-            "result": {
-              "duration": 1065000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 315000000,
-              "status": "passed"
-            },
-            "line": 99,
-            "name": "Click to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "accountMenu"
-                ]
-              },
-              {
-                "cells": [
-                  "userInfo"
-                ]
-              }
-            ],
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 9793000000,
-              "status": "passed"
-            },
-            "line": 102,
-            "name": "Send text to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.sendTextToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "email",
-                  "team5useromergmail.com"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 107000000,
-              "status": "passed"
-            },
-            "line": 104,
-            "name": "Compare text using element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "invalidFeedback",
-                  "This field is invalid",
-                  "text"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@US06"
-          }
-        ]
-      },
-      {
-        "line": 4,
-        "name": "",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 17372000000,
+              "duration": 17618000000,
               "status": "passed"
             },
             "line": 5,
@@ -1416,11 +520,11 @@
               "status": "passed"
             },
             "line": 6,
-            "name": "user provide valid username \"Team5User\"",
+            "name": "user provide valid username \"Team5Admin\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Team5User\"",
+                  "val": "\"Team5Admin\"",
                   "offset": 28
                 }
               ],
@@ -1430,15 +534,15 @@
           },
           {
             "result": {
-              "duration": 92000000,
+              "duration": 97000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user provide valid password \"userTeam5\"",
+            "name": "user provide valid password \"adminTeam5\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"userTeam5\"",
+                  "val": "\"adminTeam5\"",
                   "offset": 28
                 }
               ],
@@ -1448,7 +552,7 @@
           },
           {
             "result": {
-              "duration": 66000000,
+              "duration": 81000000,
               "status": "passed"
             },
             "line": 8,
@@ -1460,44 +564,10 @@
           },
           {
             "result": {
-              "duration": 751000000,
+              "duration": 857000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "verify  username when user logged in",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.verify_username_when_user_logged_in()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-17T23:29:51.209Z",
-        "line": 108,
-        "name": "US_007 TC_003",
-        "description": "",
-        "id": "user-info-functionality;us-007-tc-003",
-        "after": [
-          {
-            "result": {
-              "duration": 1047000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 325000000,
-              "status": "passed"
-            },
-            "line": 110,
+            "line": 10,
             "name": "Click to element with element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
@@ -1518,30 +588,10 @@
           },
           {
             "result": {
-              "duration": 8238000000,
+              "duration": 8853000000,
               "status": "passed"
             },
-            "line": 113,
-            "name": "Send text to element with element name",
-            "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.sendTextToElementWithElementName(io.cucumber.datatable.DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "email",
-                  "team5useromer@gmail"
-                ]
-              }
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 95000000,
-              "status": "passed"
-            },
-            "line": 115,
+            "line": 13,
             "name": "Compare text using element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
@@ -1549,9 +599,37 @@
             "rows": [
               {
                 "cells": [
-                  "invalidFeedback",
-                  "This field is invalid",
+                  "settingsTitle",
+                  "User settings",
                   "text"
+                ]
+              },
+              {
+                "cells": [
+                  "firstName",
+                  "Admin",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "Team5",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "team5admink@gmail.com",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "languagedropd",
+                  "English",
+                  "selectedDrobdown"
                 ]
               }
             ],
@@ -1560,20 +638,33 @@
         ],
         "tags": [
           {
-            "name": "@US06"
+            "name": "@US06_TC_01"
           }
         ]
       },
       {
-        "line": 4,
-        "name": "",
+        "start_timestamp": "2020-11-18T09:23:34.720Z",
+        "line": 26,
+        "name": "US_006 TC_001",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
+        "id": "user-info-being-populated;us-006-tc-001;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 1076000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 15717000000,
+              "duration": 15820000000,
               "status": "passed"
             },
             "line": 5,
@@ -1585,15 +676,15 @@
           },
           {
             "result": {
-              "duration": 85000000,
+              "duration": 99000000,
               "status": "passed"
             },
             "line": 6,
-            "name": "user provide valid username \"Team5User\"",
+            "name": "user provide valid username \"Team5Manager\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Team5User\"",
+                  "val": "\"Team5Manager\"",
                   "offset": 28
                 }
               ],
@@ -1603,15 +694,15 @@
           },
           {
             "result": {
-              "duration": 111000000,
+              "duration": 127000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user provide valid password \"userTeam5\"",
+            "name": "user provide valid password \"managerTeam5\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"userTeam5\"",
+                  "val": "\"managerTeam5\"",
                   "offset": 28
                 }
               ],
@@ -1633,44 +724,10 @@
           },
           {
             "result": {
-              "duration": 728000000,
+              "duration": 803000000,
               "status": "passed"
             },
-            "line": 9,
-            "name": "verify  username when user logged in",
-            "match": {
-              "location": "stepdefinitions.US16_StepDefinitions.verify_username_when_user_logged_in()"
-            },
-            "keyword": "When "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-11-17T23:30:19.280Z",
-        "line": 119,
-        "name": "US_007 TC_004",
-        "description": "",
-        "id": "user-info-functionality;us-007-tc-004",
-        "after": [
-          {
-            "result": {
-              "duration": 1028000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 322000000,
-              "status": "passed"
-            },
-            "line": 121,
+            "line": 10,
             "name": "Click to element with element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
@@ -1691,18 +748,48 @@
           },
           {
             "result": {
-              "duration": 6457000000,
+              "duration": 8018000000,
               "status": "passed"
             },
-            "line": 124,
-            "name": "Check drowdown options",
+            "line": 13,
+            "name": "Compare text using element name",
             "match": {
-              "location": "stepdefinitions.US06_StepDefinitions.checkDrowdownOptions(io.cucumber.datatable.DataTable)"
+              "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
             },
             "rows": [
               {
                 "cells": [
-                  "languagedropd"
+                  "settingsTitle",
+                  "User settings",
+                  "text"
+                ]
+              },
+              {
+                "cells": [
+                  "firstName",
+                  "Manager",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "lastName",
+                  "Team5",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "email",
+                  "team5manager@gmail.com",
+                  "value"
+                ]
+              },
+              {
+                "cells": [
+                  "languagedropd",
+                  "English",
+                  "selectedDrobdown"
                 ]
               }
             ],
@@ -1711,19 +798,19 @@
         ],
         "tags": [
           {
-            "name": "@US06"
+            "name": "@US06_TC_01"
           }
         ]
       }
     ],
-    "name": "User Info Functionality",
+    "name": "User Info being populated",
     "description": "",
-    "id": "user-info-functionality",
+    "id": "user-info-being-populated",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US06_UserInfo.feature",
+    "uri": "file:src/test/resources/features/US06USerInfoTC_01.feature",
     "tags": [
       {
-        "name": "@US06",
+        "name": "@US06_TC_01",
         "type": "Tag",
         "location": {
           "line": 1,
