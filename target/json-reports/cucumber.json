@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-19T10:46:27.037Z",
+        "start_timestamp": "2020-11-19T22:05:08.580Z",
         "line": 21,
         "name": "US_006 TC_001",
         "description": "",
@@ -11,7 +11,7 @@
         "after": [
           {
             "result": {
-              "duration": 1117000000,
+              "duration": 1330000000,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17966000000,
+              "duration": 19789000000,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 93000000,
+              "duration": 155000000,
               "status": "passed"
             },
             "line": 6,
@@ -54,7 +54,7 @@
           },
           {
             "result": {
-              "duration": 112000000,
+              "duration": 173000000,
               "status": "passed"
             },
             "line": 7,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 78000000,
+              "duration": 107000000,
               "status": "passed"
             },
             "line": 8,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 849000000,
+              "duration": 1313000000,
               "status": "passed"
             },
             "line": 9,
@@ -108,7 +108,7 @@
           },
           {
             "result": {
-              "duration": 9048000000,
+              "duration": 9663000000,
               "status": "passed"
             },
             "line": 12,
@@ -163,7 +163,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-19T10:46:56.474Z",
+        "start_timestamp": "2020-11-19T22:05:41.472Z",
         "line": 22,
         "name": "US_006 TC_001",
         "description": "",
@@ -171,7 +171,7 @@
         "after": [
           {
             "result": {
-              "duration": 1122000000,
+              "duration": 1280000000,
               "status": "passed"
             },
             "match": {
@@ -184,7 +184,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16885000000,
+              "duration": 17044000000,
               "status": "passed"
             },
             "line": 5,
@@ -196,7 +196,7 @@
           },
           {
             "result": {
-              "duration": 79000000,
+              "duration": 197000000,
               "status": "passed"
             },
             "line": 6,
@@ -214,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 106000000,
+              "duration": 240000000,
               "status": "passed"
             },
             "line": 7,
@@ -232,7 +232,7 @@
           },
           {
             "result": {
-              "duration": 80000000,
+              "duration": 120000000,
               "status": "passed"
             },
             "line": 8,
@@ -244,7 +244,7 @@
           },
           {
             "result": {
-              "duration": 909000000,
+              "duration": 1371000000,
               "status": "passed"
             },
             "line": 9,
@@ -268,7 +268,7 @@
           },
           {
             "result": {
-              "duration": 7539000000,
+              "duration": 11329000000,
               "status": "passed"
             },
             "line": 12,
@@ -323,7 +323,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-19T10:47:23.202Z",
+        "start_timestamp": "2020-11-19T22:06:13.075Z",
         "line": 23,
         "name": "US_006 TC_001",
         "description": "",
@@ -331,7 +331,7 @@
         "after": [
           {
             "result": {
-              "duration": 1076000000,
+              "duration": 1259000000,
               "status": "passed"
             },
             "match": {
@@ -344,7 +344,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17940000000,
+              "duration": 17694000000,
               "status": "passed"
             },
             "line": 5,
@@ -356,7 +356,7 @@
           },
           {
             "result": {
-              "duration": 89000000,
+              "duration": 174000000,
               "status": "passed"
             },
             "line": 6,
@@ -374,7 +374,7 @@
           },
           {
             "result": {
-              "duration": 112000000,
+              "duration": 224000000,
               "status": "passed"
             },
             "line": 7,
@@ -392,7 +392,7 @@
           },
           {
             "result": {
-              "duration": 78000000,
+              "duration": 101000000,
               "status": "passed"
             },
             "line": 8,
@@ -404,7 +404,7 @@
           },
           {
             "result": {
-              "duration": 852000000,
+              "duration": 1447000000,
               "status": "passed"
             },
             "line": 9,
@@ -428,7 +428,7 @@
           },
           {
             "result": {
-              "duration": 9103000000,
+              "duration": 12306000000,
               "status": "passed"
             },
             "line": 12,
@@ -483,7 +483,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-19T10:47:52.468Z",
+        "start_timestamp": "2020-11-19T22:06:46.296Z",
         "line": 24,
         "name": "US_006 TC_001",
         "description": "",
@@ -491,7 +491,7 @@
         "after": [
           {
             "result": {
-              "duration": 1064000000,
+              "duration": 1208000000,
               "status": "passed"
             },
             "match": {
@@ -504,7 +504,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18203000000,
+              "duration": 16919000000,
               "status": "passed"
             },
             "line": 5,
@@ -516,7 +516,7 @@
           },
           {
             "result": {
-              "duration": 83000000,
+              "duration": 97000000,
               "status": "passed"
             },
             "line": 6,
@@ -534,7 +534,7 @@
           },
           {
             "result": {
-              "duration": 101000000,
+              "duration": 242000000,
               "status": "passed"
             },
             "line": 7,
@@ -552,7 +552,7 @@
           },
           {
             "result": {
-              "duration": 74000000,
+              "duration": 88000000,
               "status": "passed"
             },
             "line": 8,
@@ -564,7 +564,7 @@
           },
           {
             "result": {
-              "duration": 871000000,
+              "duration": 1160000000,
               "status": "passed"
             },
             "line": 9,
@@ -588,7 +588,7 @@
           },
           {
             "result": {
-              "duration": 9789000000,
+              "duration": 8885000000,
               "status": "passed"
             },
             "line": 12,
@@ -643,7 +643,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-19T10:48:22.666Z",
+        "start_timestamp": "2020-11-19T22:07:14.904Z",
         "line": 25,
         "name": "US_006 TC_001",
         "description": "",
@@ -651,7 +651,7 @@
         "after": [
           {
             "result": {
-              "duration": 1106000000,
+              "duration": 1199000000,
               "status": "passed"
             },
             "match": {
@@ -664,7 +664,7 @@
         "steps": [
           {
             "result": {
-              "duration": 18328000000,
+              "duration": 20744000000,
               "status": "passed"
             },
             "line": 5,
@@ -676,7 +676,7 @@
           },
           {
             "result": {
-              "duration": 86000000,
+              "duration": 105000000,
               "status": "passed"
             },
             "line": 6,
@@ -694,7 +694,7 @@
           },
           {
             "result": {
-              "duration": 105000000,
+              "duration": 158000000,
               "status": "passed"
             },
             "line": 7,
@@ -712,7 +712,7 @@
           },
           {
             "result": {
-              "duration": 70000000,
+              "duration": 82000000,
               "status": "passed"
             },
             "line": 8,
@@ -724,7 +724,7 @@
           },
           {
             "result": {
-              "duration": 950000000,
+              "duration": 1359000000,
               "status": "passed"
             },
             "line": 9,
@@ -748,7 +748,7 @@
           },
           {
             "result": {
-              "duration": 9472000000,
+              "duration": 10052000000,
               "status": "passed"
             },
             "line": 12,
