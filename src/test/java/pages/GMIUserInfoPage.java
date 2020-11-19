@@ -231,7 +231,7 @@ public class GMIUserInfoPage {
                 Assert.assertTrue(element.getText().contains(text));
                 break;
 
-            case "value":
+        case "value":
                 System.out.println("element: "+element.getAttribute("value"));
                 Assert.assertTrue(element.getAttribute("value").equals(text));
                 break;

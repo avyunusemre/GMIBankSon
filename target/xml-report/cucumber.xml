@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="143.859">
-<testcase classname="User Info being populated" name="US_006 TC_001" time="30.444">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="146.367">
+<testcase classname="User Info being populated" name="US_006 TC_001" time="29.418">
 <system-out><![CDATA[Given User is on GMIBank Login page.........................................passed
 When user provide valid username "Team5Employee"............................passed
 When user provide valid password "employeeTeam5"............................passed
@@ -9,7 +9,7 @@ Given Click to element with element name....................................pass
 Then Compare text using element name........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Info being populated" name="US_006 TC_001 2" time="30.137">
+<testcase classname="User Info being populated" name="US_006 TC_001 2" time="26.722">
 <system-out><![CDATA[Given User is on GMIBank Login page.........................................passed
 When user provide valid username "Team5User"................................passed
 When user provide valid password "userTeam5"................................passed
@@ -18,7 +18,7 @@ Given Click to element with element name....................................pass
 Then Compare text using element name........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Info being populated" name="US_006 TC_001 3" time="27.949">
+<testcase classname="User Info being populated" name="US_006 TC_001 3" time="29.255">
 <system-out><![CDATA[Given User is on GMIBank Login page.........................................passed
 When user provide valid username "Team5Customer"............................passed
 When user provide valid password "customerTeam5"............................passed
@@ -27,7 +27,7 @@ Given Click to element with element name....................................pass
 Then Compare text using element name........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Info being populated" name="US_006 TC_001 4" time="28.631">
+<testcase classname="User Info being populated" name="US_006 TC_001 4" time="30.186">
 <system-out><![CDATA[Given User is on GMIBank Login page.........................................passed
 When user provide valid username "Team5Admin"...............................passed
 When user provide valid password "adminTeam5"...............................passed
@@ -36,7 +36,7 @@ Given Click to element with element name....................................pass
 Then Compare text using element name........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="User Info being populated" name="US_006 TC_001 5" time="26.027">
+<testcase classname="User Info being populated" name="US_006 TC_001 5" time="30.124">
 <system-out><![CDATA[Given User is on GMIBank Login page.........................................passed
 When user provide valid username "Team5Manager".............................passed
 When user provide valid password "managerTeam5".............................passed

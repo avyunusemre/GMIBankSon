@@ -3,15 +3,15 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-11-18T09:21:37.493Z",
-        "line": 22,
+        "start_timestamp": "2020-11-19T10:46:27.037Z",
+        "line": 21,
         "name": "US_006 TC_001",
         "description": "",
         "id": "user-info-being-populated;us-006-tc-001;;2",
         "after": [
           {
             "result": {
-              "duration": 1069000000,
+              "duration": 1117000000,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17013000000,
+              "duration": 17966000000,
               "status": "passed"
             },
             "line": 5,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 79000000,
+              "duration": 78000000,
               "status": "passed"
             },
             "line": 8,
@@ -84,10 +84,10 @@
           },
           {
             "result": {
-              "duration": 910000000,
+              "duration": 849000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "Click to element with element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
@@ -108,10 +108,10 @@
           },
           {
             "result": {
-              "duration": 11062000000,
+              "duration": 9048000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "Compare text using element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
@@ -163,15 +163,15 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-18T09:22:07.950Z",
-        "line": 23,
+        "start_timestamp": "2020-11-19T10:46:56.474Z",
+        "line": 22,
         "name": "US_006 TC_001",
         "description": "",
         "id": "user-info-being-populated;us-006-tc-001;;3",
         "after": [
           {
             "result": {
-              "duration": 1040000000,
+              "duration": 1122000000,
               "status": "passed"
             },
             "match": {
@@ -184,7 +184,7 @@
         "steps": [
           {
             "result": {
-              "duration": 19944000000,
+              "duration": 16885000000,
               "status": "passed"
             },
             "line": 5,
@@ -196,7 +196,7 @@
           },
           {
             "result": {
-              "duration": 74000000,
+              "duration": 79000000,
               "status": "passed"
             },
             "line": 6,
@@ -214,7 +214,7 @@
           },
           {
             "result": {
-              "duration": 95000000,
+              "duration": 106000000,
               "status": "passed"
             },
             "line": 7,
@@ -232,7 +232,7 @@
           },
           {
             "result": {
-              "duration": 72000000,
+              "duration": 80000000,
               "status": "passed"
             },
             "line": 8,
@@ -244,10 +244,10 @@
           },
           {
             "result": {
-              "duration": 1103000000,
+              "duration": 909000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "Click to element with element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
@@ -268,10 +268,10 @@
           },
           {
             "result": {
-              "duration": 7805000000,
+              "duration": 7539000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "Compare text using element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
@@ -323,15 +323,15 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-18T09:22:38.110Z",
-        "line": 24,
+        "start_timestamp": "2020-11-19T10:47:23.202Z",
+        "line": 23,
         "name": "US_006 TC_001",
         "description": "",
         "id": "user-info-being-populated;us-006-tc-001;;4",
         "after": [
           {
             "result": {
-              "duration": 1095000000,
+              "duration": 1076000000,
               "status": "passed"
             },
             "match": {
@@ -344,7 +344,7 @@
         "steps": [
           {
             "result": {
-              "duration": 16970000000,
+              "duration": 17940000000,
               "status": "passed"
             },
             "line": 5,
@@ -392,7 +392,7 @@
           },
           {
             "result": {
-              "duration": 72000000,
+              "duration": 78000000,
               "status": "passed"
             },
             "line": 8,
@@ -404,10 +404,10 @@
           },
           {
             "result": {
-              "duration": 1018000000,
+              "duration": 852000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "Click to element with element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
@@ -428,10 +428,10 @@
           },
           {
             "result": {
-              "duration": 8588000000,
+              "duration": 9103000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "Compare text using element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
@@ -483,15 +483,15 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-18T09:23:06.072Z",
-        "line": 25,
+        "start_timestamp": "2020-11-19T10:47:52.468Z",
+        "line": 24,
         "name": "US_006 TC_001",
         "description": "",
         "id": "user-info-being-populated;us-006-tc-001;;5",
         "after": [
           {
             "result": {
-              "duration": 1045000000,
+              "duration": 1064000000,
               "status": "passed"
             },
             "match": {
@@ -504,7 +504,7 @@
         "steps": [
           {
             "result": {
-              "duration": 17618000000,
+              "duration": 18203000000,
               "status": "passed"
             },
             "line": 5,
@@ -516,7 +516,7 @@
           },
           {
             "result": {
-              "duration": 75000000,
+              "duration": 83000000,
               "status": "passed"
             },
             "line": 6,
@@ -534,7 +534,7 @@
           },
           {
             "result": {
-              "duration": 97000000,
+              "duration": 101000000,
               "status": "passed"
             },
             "line": 7,
@@ -552,7 +552,7 @@
           },
           {
             "result": {
-              "duration": 81000000,
+              "duration": 74000000,
               "status": "passed"
             },
             "line": 8,
@@ -564,10 +564,10 @@
           },
           {
             "result": {
-              "duration": 857000000,
+              "duration": 871000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "Click to element with element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
@@ -588,10 +588,10 @@
           },
           {
             "result": {
-              "duration": 8853000000,
+              "duration": 9789000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "Compare text using element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
@@ -643,15 +643,15 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-18T09:23:34.720Z",
-        "line": 26,
+        "start_timestamp": "2020-11-19T10:48:22.666Z",
+        "line": 25,
         "name": "US_006 TC_001",
         "description": "",
         "id": "user-info-being-populated;us-006-tc-001;;6",
         "after": [
           {
             "result": {
-              "duration": 1076000000,
+              "duration": 1106000000,
               "status": "passed"
             },
             "match": {
@@ -664,7 +664,7 @@
         "steps": [
           {
             "result": {
-              "duration": 15820000000,
+              "duration": 18328000000,
               "status": "passed"
             },
             "line": 5,
@@ -676,7 +676,7 @@
           },
           {
             "result": {
-              "duration": 99000000,
+              "duration": 86000000,
               "status": "passed"
             },
             "line": 6,
@@ -694,7 +694,7 @@
           },
           {
             "result": {
-              "duration": 127000000,
+              "duration": 105000000,
               "status": "passed"
             },
             "line": 7,
@@ -712,7 +712,7 @@
           },
           {
             "result": {
-              "duration": 77000000,
+              "duration": 70000000,
               "status": "passed"
             },
             "line": 8,
@@ -724,10 +724,10 @@
           },
           {
             "result": {
-              "duration": 803000000,
+              "duration": 950000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "Click to element with element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.clickToElementWithElementName(io.cucumber.datatable.DataTable)"
@@ -748,10 +748,10 @@
           },
           {
             "result": {
-              "duration": 8018000000,
+              "duration": 9472000000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "Compare text using element name",
             "match": {
               "location": "stepdefinitions.US06_StepDefinitions.compareTextUsingElementName(io.cucumber.datatable.DataTable)"
