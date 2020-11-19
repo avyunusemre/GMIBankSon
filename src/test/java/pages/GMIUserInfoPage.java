@@ -23,47 +23,47 @@ public class GMIUserInfoPage {
 
 
     @FindBy(id="account-menu")
-    private WebElement accountMenu;
+    public WebElement accountMenu;
 
     @FindBy(xpath="//span[text()='Sign in']")
-    private WebElement signIn;
+    public WebElement signIn;
 
     @FindBy(name="username")
-    private WebElement username;
+    public WebElement username;
 
 
     @FindBy(name="password")
-    private WebElement password;
+    public WebElement password;
 
     @FindBy(xpath="//button//span[text()='Sign in']")
-    private WebElement signInButton;
+    public WebElement signInButton;
 
     @FindBy(xpath="//span[text()='User Info']")
-    private WebElement userInfo;
+    public WebElement userInfo;
 
     @FindBy(xpath="//h2//span")
-    private WebElement settingsTitle;
+    public WebElement settingsTitle;
 
     @FindBy(xpath="//input[@name='firstName']")
-    private WebElement firstName;
+    public WebElement firstName;
 
     @FindBy(xpath="//input[@name='lastName']")
-    private WebElement lastName;
+    public WebElement lastName;
 
     @FindBy(xpath="//input[@name='email']")
-    private WebElement email;
+    public WebElement email;
 
     @FindBy(xpath="//select[@name='langKey']")
-    private WebElement languagedropd;
+    public WebElement languagedropd;
 
     @FindBy(xpath="//button//span[text()='Save']")
-    private WebElement saveButton;
+    public WebElement saveButton;
 
     @FindBy(xpath="//div[@role='alert']//span//strong")
-    private WebElement settingsSaveMessage;
+    public WebElement settingsSaveMessage;
 
     @FindBy(xpath="//div[@class='invalid-feedback']")
-    private WebElement invalidFeedback;
+    public WebElement invalidFeedback;
 
 
 
