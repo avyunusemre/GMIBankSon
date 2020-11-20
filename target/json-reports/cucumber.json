@@ -3,18 +3,18 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": ": TC_01 Address as street and number should be provided and cannot be left blank",
+        "line": 3,
+        "name": "TC_01 Address of customer should be provided",
         "description": "",
         "type": "background",
         "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 9554000000,
+              "duration": 10349000000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 4,
             "name": "User is on GMIBank Login page",
             "match": {
               "location": "stepdefinitions.US16_StepDefinitions.user_is_on_GMIBank_Login_page()"
@@ -23,10 +23,10 @@
           },
           {
             "result": {
-              "duration": 84000000,
+              "duration": 107000000,
               "status": "passed"
             },
-            "line": 6,
+            "line": 5,
             "name": "user provide valid username \"Team5Employee\"",
             "match": {
               "arguments": [
@@ -41,10 +41,10 @@
           },
           {
             "result": {
-              "duration": 106000000,
+              "duration": 116000000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 6,
             "name": "user provide valid password \"employeeTeam5\"",
             "match": {
               "arguments": [
@@ -59,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 57000000,
+              "duration": 77000000,
               "status": "passed"
             },
-            "line": 8,
+            "line": 7,
             "name": "user click sign in button",
             "match": {
               "location": "stepdefinitions.US16_StepDefinitions.user_click_sign_in_button()"
@@ -71,10 +71,10 @@
           },
           {
             "result": {
-              "duration": 561000000,
+              "duration": 668000000,
               "status": "passed"
             },
-            "line": 9,
+            "line": 8,
             "name": "user clicks on My Operations",
             "match": {
               "location": "stepdefinitions.US10Negative_StepDefinitions.user_clicks_on_My_Operations()"
@@ -83,10 +83,10 @@
           },
           {
             "result": {
-              "duration": 179000000,
+              "duration": 178000000,
               "status": "passed"
             },
-            "line": 10,
+            "line": 9,
             "name": "user clicks on Manage Customer",
             "match": {
               "location": "stepdefinitions.US10Negative_StepDefinitions.user_clicks_on_Manage_Customer()"
@@ -95,10 +95,10 @@
           },
           {
             "result": {
-              "duration": 243000000,
+              "duration": 235000000,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "user clicks on Create a new Customer",
             "match": {
               "location": "stepdefinitions.US10Negative_StepDefinitions.user_clicks_on_Create_a_new_Customer()"
@@ -107,76 +107,28 @@
           },
           {
             "result": {
-              "duration": 455000000,
+              "duration": 148000000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user fills in the SSN textbox",
-            "match": {
-              "location": "stepdefinitions.US10Negative_StepDefinitions.user_fills_in_the_SSN_textbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 85000000,
-              "status": "passed"
-            },
-            "line": 13,
+            "line": 11,
             "name": "user clicks on the Search button",
             "match": {
               "location": "stepdefinitions.US10Negative_StepDefinitions.user_clicks_on_the_Search_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 221000000,
-              "status": "passed"
-            },
-            "line": 14,
-            "name": "user fills in the Middle Initial textbox with valid credential",
-            "match": {
-              "location": "stepdefinitions.US10Negative_StepDefinitions.user_fills_in_the_Middle_Initial_textbox_with_valid_credential()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 182000000,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "user fills in the Phone Number textbox with valid credential",
-            "match": {
-              "location": "stepdefinitions.US10Negative_StepDefinitions.user_fills_in_the_Phone_Number_textbox_with_valid_credential()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 123000000,
-              "status": "passed"
-            },
-            "line": 16,
-            "name": "user fills in the Zip Code text box with valid credential",
-            "match": {
-              "location": "stepdefinitions.US10Negative_StepDefinitions.user_fills_in_the_Zip_Code_text_box_with_valid_credential()"
             },
             "keyword": "And "
           }
         ]
       },
       {
-        "start_timestamp": "2020-11-16T02:27:26.068Z",
-        "line": 19,
-        "name": "",
+        "start_timestamp": "2020-11-20T15:10:43.579Z",
+        "line": 14,
+        "name": "TC01 Address should be provided",
         "description": "",
-        "id": "address-of-customer-can-be-created;",
+        "id": "address-of-customer;tc01-address-should-be-provided",
         "after": [
           {
             "result": {
-              "duration": 1627000000,
+              "duration": 1218000000,
               "status": "passed"
             },
             "match": {
@@ -189,27 +141,99 @@
         "steps": [
           {
             "result": {
-              "duration": 110000000,
+              "duration": 10539000000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "user clears in the Address textbox",
-            "match": {
-              "location": "stepdefinitions.US10Negative_StepDefinitions.user_clears_in_the_Address_textbox()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 166000000,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "user fills in the City textbox with valid credential \"Dakota City\"",
+            "line": 15,
+            "name": "user fills in the SSN textbox with valid credential \"123-45-6778\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Dakota City\"",
+                  "val": "\"123-45-6778\"",
+                  "offset": 52
+                }
+              ],
+              "location": "stepdefinitions.US10_StepDefinitons.user_fills_in_the_SSN_textbox_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on the Search button",
+            "match": {
+              "location": "stepdefinitions.US10Negative_StepDefinitions.user_clicks_on_the_Search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user fills in the Middle Initial textbox with valid credential \"-\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"-\"",
+                  "offset": 63
+                }
+              ],
+              "location": "stepdefinitions.US10_StepDefinitons.user_fills_in_the_Middle_Initial_textbox_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10191000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user fills in the Phone Number textbox with valid credential \"212-599-0020\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"212-599-0020\"",
+                  "offset": 61
+                }
+              ],
+              "location": "stepdefinitions.US10_StepDefinitons.user_fills_in_the_Phone_Number_textbox_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10165000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user fills in the Zip Code text box with valid credential \"G51 1AG\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"G51 1AG\"",
+                  "offset": 58
+                }
+              ],
+              "location": "stepdefinitions.US10_StepDefinitons.user_fills_in_the_Zip_Code_text_box_with_valid_credential(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 158000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user fills in the City textbox with valid credential \"Glasgow\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Glasgow\"",
                   "offset": 53
                 }
               ],
@@ -219,27 +243,33 @@
           },
           {
             "result": {
-              "duration": 192000000,
+              "duration": 228000000,
               "status": "passed"
             },
-            "line": 22,
-            "name": "user selects a country from Country dropdown",
+            "line": 21,
+            "name": "user selects a country from Country dropdown \"5\"",
             "match": {
-              "location": "stepdefinitions.US10Negative_StepDefinitions.user_selects_a_country_from_Country_dropdown()"
+              "arguments": [
+                {
+                  "val": "\"5\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.US10_StepDefinitons.user_selects_a_country_from_Country_dropdown(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 169000000,
+              "duration": 165000000,
               "status": "passed"
             },
-            "line": 23,
-            "name": "user fills in the State textbox with valid credential \"North Dakota\"",
+            "line": 22,
+            "name": "user fills in the State textbox with valid credential \"Glasgow-city\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"North Dakota\"",
+                  "val": "\"Glasgow-city\"",
                   "offset": 54
                 }
               ],
@@ -249,28 +279,10 @@
           },
           {
             "result": {
-              "duration": 187000000,
+              "duration": 227000000,
               "status": "passed"
             },
-            "line": 24,
-            "name": "user selects a account from Account menu \"SavingT5\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"SavingT5\"",
-                  "offset": 41
-                }
-              ],
-              "location": "stepdefinitions.US10Negative_StepDefinitions.user_selects_a_account_from_Account_menu(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 165000000,
-              "status": "passed"
-            },
-            "line": 25,
+            "line": 23,
             "name": "user clicks on the save button",
             "match": {
               "location": "stepdefinitions.US10Negative_StepDefinitions.user_clicks_on_the_save_button()"
@@ -279,32 +291,32 @@
           },
           {
             "result": {
-              "duration": 103000000,
+              "duration": 857000000,
               "status": "passed"
             },
-            "line": 26,
-            "name": "user sees redbox and error message",
+            "line": 24,
+            "name": "user sees success message",
             "match": {
-              "location": "stepdefinitions.US10Negative_StepDefinitions.user_sees_redbox_and_error_message()"
+              "location": "stepdefinitions.US10_StepDefinitons.user_sees_success_message()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@US10Negative"
+            "name": "@US_10"
           }
         ]
       }
     ],
-    "name": "Address of customer can be created",
+    "name": "Address of customer",
     "description": "",
-    "id": "address-of-customer-can-be-created",
+    "id": "address-of-customer",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US10_NegativeAdress.feature",
+    "uri": "file:src/test/resources/features/US10_Address.feature",
     "tags": [
       {
-        "name": "@US10Negative",
+        "name": "@US_10",
         "type": "Tag",
         "location": {
           "line": 1,

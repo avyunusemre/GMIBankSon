@@ -74,5 +74,7 @@ public class GMICreateANewCustomerPage {
     @FindBy(xpath = "//*[@id='app-view-container']/div[1]/div/div/div/div[2]/div/form/div[9]/div/div")
     public WebElement feedBackMessage;
 
+    @FindBy(xpath ="//div[@role='alert']")
+    public WebElement successMessage;
 
 }
