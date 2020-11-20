@@ -3,25 +3,15 @@
     "line": 2,
     "elements": [
       {
-
-        "start_timestamp": "2020-11-18T20:49:24.806Z",
-        "line": 3,
-        "name": "TC02_kullanici database baglantini kontrol eder",
-
         "start_timestamp": "2020-11-19T10:46:27.037Z",
         "line": 21,
         "name": "US_006 TC_001",
-
         "description": "",
-        "id": "database-test;tc02-kullanici-database-baglantini-kontrol-eder",
+        "id": "user-info-being-populated;us-006-tc-001;;2",
         "after": [
           {
             "result": {
-
-              "duration": 6779000000,
-
               "duration": 1117000000,
-
               "status": "passed"
             },
             "match": {
@@ -30,24 +20,19 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-
-              "duration": 6162000000,
-
               "duration": 17966000000,
-
               "status": "passed"
             },
-            "line": 4,
-            "name": "kullanici veritabanina baglanir",
+            "line": 5,
+            "name": "User is on GMIBank Login page",
             "match": {
-              "location": "stepdefinitions.DBStepDefinitions.kullanici_veritabanina_baglanir()"
+              "location": "stepdefinitions.US16_StepDefinitions.user_is_on_GMIBank_Login_page()"
             },
             "keyword": "Given "
-
           },
           {
             "result": {
@@ -809,24 +794,23 @@
               }
             ],
             "keyword": "Then "
-
           }
         ],
         "tags": [
           {
-            "name": "@db"
+            "name": "@US06_TC_01"
           }
         ]
       }
     ],
-    "name": "DataBase Test",
+    "name": "User Info being populated",
     "description": "",
-    "id": "database-test",
+    "id": "user-info-being-populated",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/db.feature",
+    "uri": "file:src/test/resources/features/US06USerInfoTC_01.feature",
     "tags": [
       {
-        "name": "@db",
+        "name": "@US06_TC_01",
         "type": "Tag",
         "location": {
           "line": 1,
