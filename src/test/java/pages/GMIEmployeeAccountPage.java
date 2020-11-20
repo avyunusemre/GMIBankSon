@@ -23,4 +23,5 @@ public class GMIEmployeeAccountPage {
     @FindBy(xpath = "//*[@id='jh-create-entity']/span")
     public WebElement createANewCustomer;
 
+
 }
