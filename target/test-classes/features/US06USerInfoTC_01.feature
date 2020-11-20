@@ -6,7 +6,6 @@ Feature: User Info being populated
     When  user provide valid username "<username>"
     When  user provide valid password "<password>"
     When  user click sign in button
-
     Given Click to element with element name
       | accountMenu |
       | userInfo    |
