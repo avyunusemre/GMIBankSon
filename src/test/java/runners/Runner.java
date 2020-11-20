@@ -5,6 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        strict = true,
         plugin = {
                 "html:target/default-cucumber-reports",
                 "json:target/json-reports/cucumber.json",
@@ -13,7 +14,7 @@ import org.junit.runner.RunWith;
         //plugin = "html:target\\default-cucumber-reports",//for windows
         features ="src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@US10Negative",
+        tags = "@db",
         dryRun = false
 )
 public class Runner {

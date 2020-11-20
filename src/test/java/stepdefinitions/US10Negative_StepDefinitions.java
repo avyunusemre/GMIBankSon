@@ -28,9 +28,9 @@ public class US10Negative_StepDefinitions {
         employeeAccountPage.createANewCustomer.click();
     }
 
-    @Given("user fills in the SSN textbox")
-    public void user_fills_in_the_SSN_textbox() {
-        createANewCustomerPage.searchSSNBox.sendKeys("235-23-2235");
+    @Given("user fills in the SSN textbox {string}")
+    public void user_fills_in_the_SSN_textbox(String string) {
+       createANewCustomerPage.searchSSNBox.sendKeys(string);
     }
 
     @Given("user clicks on the Search button")
@@ -50,12 +50,18 @@ public class US10Negative_StepDefinitions {
 
     @Given("user fills in the Zip Code text box with valid credential")
     public void user_fills_in_the_Zip_Code_text_box_with_valid_credential() {
-        createANewCustomerPage.zipCodeBox.sendKeys("12357");
+        createANewCustomerPage.zipCodeBox.sendKeys("68731");
     }
 
     @Given("user clears in the Address textbox")
     public void user_clears_in_the_Address_textbox() {
         createANewCustomerPage.addressBox.clear();
+    }
+
+    @Given("Address only as street should be provided")
+    public void address_only_as_street_should_be_provided() {
+        createANewCustomerPage.addressBox.clear();
+        createANewCustomerPage.addressBox.sendKeys("Broadway St");
     }
 
     @Given("user fills in the City textbox with valid credential {string}")
@@ -66,7 +72,7 @@ public class US10Negative_StepDefinitions {
     @Given("user selects a country from Country dropdown")
     public void user_selects_a_country_from_Country_dropdown() {
         Select select = new Select(createANewCustomerPage.countryDropDown);
-        select.selectByIndex(2);
+        select.selectByIndex(1);
     }
 
     @Given("user fills in the State textbox with valid credential {string}")
@@ -87,11 +93,26 @@ public class US10Negative_StepDefinitions {
         createANewCustomerPage.saveButton.click();
     }
 
-    @Then("user sees redbox and error message")
-    public void user_sees_redbox_and_error_message() {
-        Driver.waitForVisibility(createANewCustomerPage.feedBackMessage,5);
-        Assert.assertTrue(createANewCustomerPage.feedBackMessage.isDisplayed());
+    @Then("user sees redframe around the adress box and feedback message")
+    public void user_sees_redframe_around_the_adress_box_and_feedback_message() {
+        Driver.waitForVisibility(createANewCustomerPage.feedBackAdress,5);
+        Assert.assertTrue(createANewCustomerPage.feedBackAdress.isDisplayed());
+        System.out.println(createANewCustomerPage.feedBackAdress.getText());
     }
 
+    @Then("user sees redframe around the citybox and feedback message")
+    public void user_sees_redframe_around_the_citybox_and_feedback_message() {
+        Driver.waitForVisibility(createANewCustomerPage.feedBackCity,5);
+        Assert.assertTrue(createANewCustomerPage.feedBackCity.isDisplayed());
+        System.out.println(createANewCustomerPage.feedBackCity.getText());
+    }
+
+    @Then("user sees the error message")
+    public void user_sees_the_error_message() {
+        Driver.waitForVisibility(createANewCustomerPage.errorMessage,5);
+        Assert.assertTrue(createANewCustomerPage.errorMessage.isDisplayed());
+        System.out.println(createANewCustomerPage.errorMessage.getText());
+        Assert.assertTrue(createANewCustomerPage.errorMessage.getText().contains("error"));
+    }
 
 }
