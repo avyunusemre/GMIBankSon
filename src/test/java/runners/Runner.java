@@ -5,17 +5,18 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-//        strict = true,
-//        plugin = {
-//                "html:target/default-cucumber-reports",
-//                "json:target/json-reports/cucumber.json",
-//                "junit:target/xml-report/cucumber.xml"
-//        },
+        strict = true,
+        plugin = {
+                "html:target/default-cucumber-reports",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml"
+        },
         //plugin = "html:target\\default-cucumber-reports",//for windows
         features ="src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@US15TCs",
+        tags = "@US_10",
         dryRun = false
 )
-public class Runner{
+public class Runner {
+
 }
