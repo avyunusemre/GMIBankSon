@@ -15,7 +15,7 @@ public class GMILoginPage {
     public WebElement passwordBox;
     @FindBy(xpath = "(//button)[4]")
     public WebElement signInButton;
-    @FindBy (xpath = "//h5/span")
+    @FindBy (xpath = "//h5//span")
     public WebElement loginPageText;
     @FindBy (xpath = "(//span)[22]")
     public WebElement CanselButton;
