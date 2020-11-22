@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="GMIBankTeam5" />
+        <module name="GMIBankTeam5-New" />
       </profile>
     </annotationProcessing>
   </component>
