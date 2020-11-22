@@ -37,5 +37,6 @@ public class GMIRegistrationPage {
 
     @FindBy (id = "register-submit")
     public WebElement Register;
+    //
 
 }
