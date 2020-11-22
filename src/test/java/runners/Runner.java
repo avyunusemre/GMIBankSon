@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         //plugin = "html:target\\default-cucumber-reports",//for windows
         features ="src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@US_10",
+        tags = "@db",
         dryRun = false
 )
 public class Runner{
