@@ -13,9 +13,6 @@ public class GMIRegistrationPage {
 
     @FindBy (xpath = "//*[@id=\"account-menu\"]/div/a[2]/span")
     public WebElement RegisterButton;
-
-
-    
     @FindBy  (id = "ssn")
     public WebElement ssnBox;
 
@@ -63,6 +60,8 @@ public class GMIRegistrationPage {
 
     @FindBy (xpath = "//*[@id=\"register-form\"]/div[6]/div")
     public WebElement UserNameRed;
+
+    
 
 
 }
