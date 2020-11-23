@@ -7,9 +7,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         strict = true,
         plugin = {
-                "html:target/default-cucumber-reports",
-                "json:target/json-reports/cucumber.json",
-                "junit:target/xml-report/cucumber.xml"
+//                "html:target/default-cucumber-reports",
+//                "json:target/json-reports/cucumber.json",
+//                "junit:target/xml-report/cucumber.xml"
         },
         //plugin = "html:target\\default-cucumber-reports",//for windows
         features ="src/test/resources/features",
