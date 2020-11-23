@@ -35,7 +35,7 @@ GMICustomerTransfer gmiCustomerTransfer=new GMICustomerTransfer();
 
     @When("user clicks on the View Transaction")
     public void user_clicks_on_the_View_Transaction() {
-        gmiCustomerTransfer.viewTransectionBtn.click();
+        gmiCustomerTransfer.viewTransectionBtn1.click();
 
  }
 
