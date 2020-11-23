@@ -35,4 +35,6 @@ public class GMICreateANewAccountPage {
     @FindBy(xpath = "//*[@id='save-entity']")
     public WebElement saveButton;
 
+    @FindBy(xpath = "//div[@class='Toastify__toast-container Toastify__toast-container--top-left toastify-container']")
+    public WebElement createFakeDateSuccesMessage;
 }

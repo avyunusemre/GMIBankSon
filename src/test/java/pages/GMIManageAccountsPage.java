@@ -44,4 +44,7 @@ public class GMIManageAccountsPage {
     @FindBy(xpath = "//*[@class='table']/tbody/tr[1]/td[10]/div/a[3]")
     public WebElement accountsDelete;
 
+    @FindBy(xpath = "//*[@id='jh-create-entity']/span")
+    public WebElement createANewAccount;
+
 }
