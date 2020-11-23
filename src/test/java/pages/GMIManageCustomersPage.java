@@ -47,4 +47,13 @@ public class GMIManageCustomersPage {
     @FindBy(xpath = "//*[@class='table']/tbody/tr[9]/td[10]/div/a[3]")
     public WebElement customersDelete;
 
+    @FindBy(xpath = "//*[@id='app-view-container']/div[1]/div/div/div/div/a[2]")
+    public WebElement editButton;
+
+    @FindBy(xpath = "//div[@class='modal-body']/span")
+    public WebElement deleteAlertMessage;
+
+    @FindBy(xpath = "//*[@id='jhi-confirm-delete-tPCustomer']")
+    public WebElement alertDeleteButton;
+
 }
