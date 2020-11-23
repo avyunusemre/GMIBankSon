@@ -25,8 +25,8 @@ public class US16_StepDefinitions {
     @Given("User is on GMIBank Login page")
     public void user_is_on_GMIBank_Login_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("gmi_login_url"));
-        ReusableMethods.waitForVisibility(gmiLoginPage.loginPageText,5);
-        Assert.assertTrue(gmiLoginPage.loginPageText.isDisplayed());
+       // Driver.waitForVisibility(gmiLoginPage.loginPageText,5);
+       // Assert.assertTrue(gmiLoginPage.loginPageText.isDisplayed());
     }
 
     @When("user provide valid username {string}")
@@ -47,8 +47,8 @@ public class US16_StepDefinitions {
 
     @When("verify  username when user logged in")
     public void verify_username_when_user_logged_in() {
-        ReusableMethods.waitForVisibility(gmiCustomerPage.signedInUserName,5);
-        Assert.assertTrue(gmiCustomerPage.signedInUserName.isDisplayed());
+     //   Driver.waitForVisibility(gmiCustomerPage.signedInUserName,5);
+       // Assert.assertTrue(gmiCustomerPage.signedInUserName.isDisplayed());
     }
 
 
@@ -60,7 +60,7 @@ public class US16_StepDefinitions {
 
     @Then("verify user is on Customer Accounts page")
     public void verify_user_is_on_Customer_Accounts_page() {
-        ReusableMethods.waitFor(20);
+     //   Driver.waitForPageToLoad(5);
         String  pageText = gmiCustomerAccountPage.transferPageText.getText();
         //System.out.println(pageText);
         Assert.assertEquals(pageText,ConfigurationReader.getProperty("transfer"));
@@ -70,7 +70,7 @@ public class US16_StepDefinitions {
     @Then("verify user has minimum two accounts")
     public void verify_user_has_minimum_two_accounts() {
         WebElement fromMenu = gmiCustomerAccountPage.fromAccountBox;
-        ReusableMethods.waitForVisibility(fromMenu,10);
+      //  Driver.waitForVisibility(fromMenu,10);
         Select select = new Select(fromMenu);
         int actualAccountNumber = select.getOptions().size();
         if (actualAccountNumber<2){ Assert.fail(); }
@@ -78,7 +78,7 @@ public class US16_StepDefinitions {
     @When("user select an account from FROM box {string}")
     public void user_select_an_account_from_FROM_box(String accountID) {
         WebElement fromMenu = gmiCustomerAccountPage.fromAccountBox;
-        ReusableMethods.waitForVisibility(fromMenu,10);
+     //   Driver.waitForVisibility(fromMenu,10);
         Select select = new Select(fromMenu);
         select.selectByValue(accountID);
 
@@ -91,7 +91,7 @@ public class US16_StepDefinitions {
     @When("user select an account from TO box {string}")
     public void user_select_an_account_from_TO_box(String accountID) {
         WebElement fromMenu = gmiCustomerAccountPage.toAccountBox;
-        ReusableMethods.waitForVisibility(fromMenu,10);
+      //  Driver.waitForVisibility(fromMenu,10);
         Select select = new Select(fromMenu);
         select.selectByValue(accountID);
     }
@@ -124,10 +124,10 @@ public class US16_StepDefinitions {
 
     @Then("verify success message {string}")
     public void verify_success_message(String expectedSuccessMessage) {
-        ReusableMethods.waitForVisibility(gmiCustomerAccountPage.successPopUpMessage,5);
+      //  Driver.waitForVisibility(gmiCustomerAccountPage.successPopUpMessage,5);
         String actualSuccessMessage = gmiCustomerAccountPage.successPopUpMessage.getText();
         //String actualSuccessMessage = Driver.getDriver().switchTo().alert().getText();
-        ReusableMethods.waitFor(3);
+    //    ReusableMethods.waitFor(3);
         Assert.assertEquals(expectedSuccessMessage,actualSuccessMessage);
     }
 

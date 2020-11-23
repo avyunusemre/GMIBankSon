@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="14.509">
+<testcase classname="DataBase Test" name="TC02_kullanici database baglantini kontrol eder" time="13.683">
+<system-out><![CDATA[Given kullanici veritabanina baglanir.......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
