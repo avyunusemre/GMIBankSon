@@ -43,8 +43,10 @@ gmiCreateANewAccountPage.saveButton.click();
   }
 
     @Then("user sees green success message on the screen")
-    public void user_sees_green_success_message_on_the_screen() {
-     Assert.assertTrue(gmiCreateANewAccountPage.createFakeDateSuccesMessage.isDisplayed());
+    public void user_sees_green_success_message_on_the_screen() throws InterruptedException {
+   Boolean succesMessage=gmiCreateANewAccountPage.createFakeDateSuccesMessage.isDisplayed();
+     Assert.assertTrue(succesMessage);
+    Thread.sleep(6000);
     }
 
     @Then("user sees the date and time which entered format")
