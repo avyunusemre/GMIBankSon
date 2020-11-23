@@ -12,6 +12,7 @@ public class GMICreateANewCustomerPage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
+
     @FindBy(xpath = "//*[@id='search-ssn']")
     public WebElement searchSSNBox;
 
@@ -85,9 +86,6 @@ public class GMICreateANewCustomerPage {
     public WebElement successMessage;
 
 
-
-    @FindBy(xpath ="//div[@role='alert']")
-    public WebElement successMessage;
 
 
 
