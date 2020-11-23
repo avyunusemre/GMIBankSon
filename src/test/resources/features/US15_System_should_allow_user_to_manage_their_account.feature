@@ -11,11 +11,12 @@ Feature: US15_System_should_allow_user_to_manage_their_account
 
   Scenario Outline: User should see all account types and balace populated
     When  user sees all account types "<Account_Type>"
+    Then user sees the all populated balances
    Examples:
       | Account_Type |
       | 5778         |
-      | 5776         |
-    Then user sees the all populated balances
+
+
 
     Scenario: User can view transaction
       When user clicks on the View Transaction

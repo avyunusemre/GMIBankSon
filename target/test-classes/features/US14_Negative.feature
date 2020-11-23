@@ -1,4 +1,4 @@
-@US_10
+@US14_Negative
 Feature: Address of customer
   Background: TC_01 Address of customer should be provided
     Given User is on GMIBank Login page

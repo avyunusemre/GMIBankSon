@@ -15,7 +15,7 @@ public class GMICustomerTransfer {
     @FindBy(xpath = "//tbody/tr[1]/td[1]")
     public WebElement accountType;
 
-    @FindBy(xpath = "//tbody/tr[1]/td[2]")
+    @FindBy(xpath = "//tbody/tr[2]/td[2]")
     public WebElement accountName;
 
     @FindBy(xpath = "//tbody/tr[1]/td[3]")
