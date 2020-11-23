@@ -15,6 +15,7 @@ public class GMIRegistrationPage {
     public WebElement RegisterButton;
 
 
+    
     @FindBy  (id = "ssn")
     public WebElement ssnBox;
 
