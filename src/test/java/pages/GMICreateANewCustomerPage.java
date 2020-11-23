@@ -5,7 +5,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
-import java.util.List;
 
 public class GMICreateANewCustomerPage {
 
@@ -82,9 +81,8 @@ public class GMICreateANewCustomerPage {
     @FindBy(xpath = "//*[@id='root']/div/div/div[1]/div/div[2]/div[1]")
     public WebElement errorMessage;
 
-    @FindBy(xpath = "//*[@id='root']/div/div/div[1]/div/div")
+    @FindBy(xpath ="//div[@role='alert']")
     public WebElement successMessage;
-
 
 
 

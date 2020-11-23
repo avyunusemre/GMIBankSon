@@ -21,11 +21,27 @@ public class DatabaseUtility {
             e.printStackTrace();
         }
     }
+
+    private static void executeQuery(String query) {
+        try {
+            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        try {
+            resultSet = statement.executeQuery(query);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
     public static void createConnection(String url, String user, String password) {
         try {
             connection = DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         }
     }
@@ -133,12 +149,15 @@ public class DatabaseUtility {
         ResultSetMetaData rsmd;
         try {
             rsmd = resultSet.getMetaData();
+            int colon_sayisi=rsmd.getColumnCount(); //ben ekledim
+            System.out.println("Toplam kolon sayisi= "+colon_sayisi);//ben ekledim
             while (resultSet.next()) {
                 Map<String, Object> colNameValueMap = new HashMap<>();
                 for (int i = 1; i <= rsmd.getColumnCount(); i++) {
                     colNameValueMap.put(rsmd.getColumnName(i), resultSet.getObject(i));
                 }
                 rowList.add(colNameValueMap);
+
             }
         } catch (SQLException e) {
             // TODO Auto-generated catch block
@@ -167,20 +186,7 @@ public class DatabaseUtility {
         }
         return columns;
     }
-    private static void executeQuery(String query) {
-        try {
-            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        try {
-            resultSet = statement.executeQuery(query);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-    }
+
     public static int getRowCount() throws Exception {
         resultSet.last();
         int rowCount = resultSet.getRow();
