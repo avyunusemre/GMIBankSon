@@ -20,7 +20,7 @@ public class US01_NegativeRegisterStepDef {
  public void kullaniciBirUserOlarakSagUstKosedeBulunanInsanSimgesineTiklar() {
   gmiRegisration.AccountBox.click();
 
- }
+ }git
 
  @And("Kullanici bir user olarak acilan menuden register linkine tiklar")
  public void kullaniciBirUserOlarakAcilanMenudenRegisterLinkineTiklar() {
