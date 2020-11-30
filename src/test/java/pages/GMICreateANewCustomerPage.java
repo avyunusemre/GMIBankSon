@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -7,6 +8,8 @@ import utilities.Driver;
 
 
 public class GMICreateANewCustomerPage {
+
+    public WebElement successMessage;
 
     public GMICreateANewCustomerPage() {
         PageFactory.initElements(Driver.getDriver(),this);
@@ -82,7 +85,11 @@ public class GMICreateANewCustomerPage {
     public WebElement errorMessage;
 
     @FindBy(xpath ="//div[@role='alert']")
-    public WebElement successMessage;
+
+
+
+
+    public WebElement successAlert;
 
 
 
