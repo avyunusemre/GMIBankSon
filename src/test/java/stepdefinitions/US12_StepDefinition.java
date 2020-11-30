@@ -67,6 +67,7 @@ public class US12_StepDefinition {
 
     @Given("Verify an View button")
     public void verify_an_View_button() {
+        Driver.wait(5);
         if (manageCustomersPage.customersView.isDisplayed()){
             System.out.println("View button is available");
         }else {
@@ -91,6 +92,7 @@ public class US12_StepDefinition {
 
     @Given("Verify an Edit button from main page")
     public void verify_an_Edit_button_from_main_page() {
+        Driver.wait(5);
         if (manageCustomersPage.customersEdit.isDisplayed()){
             System.out.println("Edit button is available");
         }else {
@@ -100,12 +102,14 @@ public class US12_StepDefinition {
 
     @Given("Click on the Edit button from main page")
     public void click_on_the_Edit_button_from_main_page() {
+        Driver.wait(5);
         manageCustomersPage.customersEdit.click();
     }
 
 
     @Given("Click on the Edit button")
     public void click_on_the_Edit_button() {
+        Driver.wait(5);
         manageCustomersPage.customersEdit.click();
     }
 
@@ -186,10 +190,10 @@ public class US12_StepDefinition {
         createANewCustomerPage.stateBox.sendKeys(string);
     }
 
-    @Given("Change user {string}")
-    public void change_user(String string) {
+    @Given("Change user")
+    public void change_user() {
         Select drpUser=new Select(createANewCustomerPage.userDropDown);
-        drpUser.selectByVisibleText(string);
+        drpUser.selectByIndex(5);
     }
 
     @Given("Change account {string}")
@@ -212,6 +216,7 @@ public class US12_StepDefinition {
 
     @Given("Click on the Delete button")
     public void click_on_the_Delete_button() {
+        Driver.wait(5);
         manageCustomersPage.customersDelete.click();
     }
 
