@@ -1,4 +1,4 @@
-package pojos;
+package pojos_;
 
 import com.sun.tools.xjc.reader.xmlschema.bindinfo.BIConversion;
 import org.apache.commons.lang3.builder.ToStringBuilder;

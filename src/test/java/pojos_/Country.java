@@ -1,4 +1,4 @@
-package pojos;
+package pojos_;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.codehaus.jackson.annotate.*;
