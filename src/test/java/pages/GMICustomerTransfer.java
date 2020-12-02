@@ -15,14 +15,24 @@ public class GMICustomerTransfer {
     @FindBy(xpath = "//tbody/tr[1]/td[1]")
     public WebElement accountType;
 
+
     @FindBy(xpath = "//tbody/tr[1]/td[2]")
     public WebElement accountName;
+
+
+    @FindBy(xpath = "//tbody/tr[2]/td[2]")
+    public WebElement accountName2;
 
     @FindBy(xpath = "//tbody/tr[1]/td[3]")
     public WebElement accountBalance;
 
+
     @FindBy(xpath = "//tbody/tr[1]/td[4]")
     public WebElement viewTransectionBtn;
+
+    @FindBy(xpath = "//button[text()]")
+    public WebElement viewTransectionBtn1;
+
 
     @FindBy(xpath = "//td[text()='Transfer 100.00 from account ID: 5778 ']")
     public WebElement doneTranferText;

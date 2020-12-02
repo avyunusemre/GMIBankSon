@@ -26,7 +26,11 @@
             When user select an account from TO box "5776"
             When user provide an amount that user want to transfer "100"
             Then verify the amount is visible in the box "100"
+<<<<<<< HEAD
 
+=======
+@smoke
+>>>>>>> main
         Scenario: User should provide a description for that transfer
             When user select an account from FROM box "5778"
             When user select an account from TO box "5776"
