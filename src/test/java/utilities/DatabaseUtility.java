@@ -21,6 +21,15 @@ public class DatabaseUtility {
             e.printStackTrace();
         }
     }
+    public static ResultSet getResultset() {
+        try {
+            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return resultSet;
+    }
 
     private static void executeQuery(String query) {
         try {
@@ -59,6 +68,15 @@ public class DatabaseUtility {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+    public static ResultSet getResultSet() {
+        try {
+            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
+        } catch (SQLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        return resultSet;
     }
     /**
      *
