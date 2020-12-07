@@ -1,6 +1,5 @@
 package pages;
 
-import org.junit.runner.manipulation.Ordering;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
