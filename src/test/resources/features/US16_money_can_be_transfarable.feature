@@ -33,7 +33,9 @@
             When user provide an amount that user want to transfer "100"
             When user provide description to the box "Transfer"
             Then verify the description is visible int the box "Transfer"
+
         @smoke
+
         Scenario: User can make sure  transfer is done successfully validating the message an amount of transaction
             When user select an account from FROM box "5778"
             When user select an account from TO box "5776"
@@ -41,3 +43,4 @@
             When user provide description to the box "Transfer"
             When user click Make Transfer button
             Then verify success message "100.0$ is transferred successfully."
+

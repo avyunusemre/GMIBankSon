@@ -18,7 +18,7 @@ Feature: An Employee can manage Customer
     And Verify if the mobile phone number is showing "951-753-1654"
     And Verify if the phone number is showing "951-753-1654"
     And Verify if the address is showing "Test Mahallesi Test Sokak Test Apartman 06100 Alaska"
-    Then Verify if the create date is showing "06/10/20 22:00"
+    Then Verify if the create date is showing "23/11/20 22:00"
 
 @US12_TC02
   Scenario: There should be a View option where customer can be navigated to all customer info and see edit button there

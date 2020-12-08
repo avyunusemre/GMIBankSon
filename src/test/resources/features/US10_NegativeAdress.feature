@@ -85,7 +85,7 @@ Feature: Address of customer can be created
 
     @US10Negative_TC006
     Scenario: Leave the State textbox empty
-      Given user fills in the SSN textbox "342-23-5645"
+      Given user fills in the SSN textbox "342-23-5646"
       And user clicks on the Search button
       And user fills in the Middle Initial textbox with valid credential
       And user fills in the Phone Number textbox with valid credential
