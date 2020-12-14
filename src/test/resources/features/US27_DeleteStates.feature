@@ -5,6 +5,7 @@ Feature: Delete State
     Given User convert to all states to pojo
 
 
+
   Scenario Outline: US27 TC01 delete states
 
     Then  Delete states with "<id>" and verify status code as "<statusCode>"

@@ -14,6 +14,7 @@ Feature: US27 Read State
       | 21567 | Alsace          |
       | 21569 | Auvergne        |
 
+
   Scenario: US22 TC_02
 
     When Write all States in txt
