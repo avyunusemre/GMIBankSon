@@ -13,7 +13,7 @@ import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
 
-public class US26_Huseyn_StepDefinitons {
+public class US26_Huseyn_StepDefinitions {
 
     Response response;
 
