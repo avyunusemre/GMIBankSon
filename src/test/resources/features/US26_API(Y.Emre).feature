@@ -7,13 +7,14 @@
       And get all countries as De-Serialization
 
 
+
     @US26_TC001
-    Scenario: TC_001 : Update first country with PUT request
-      And Send a PUT request to REST API endpoint and update first country
+    Scenario: US26_TC001 : Update first country with PUT request
+      And Send a PUT request to REST API endpoint and update first country "https://www.gmibank.com/api/tp-countries/"
       Then Verify the updated country has been updated
 
 
     @US26_TC002
     Scenario: US26_TC002 : Update last country with PATCH request
-      And Send a PATCH request to REST API endpoint and update last country
-      Then Verify the updated country has been updated
+      And Send a PUT request to REST API endpoint and update last country "https://www.gmibank.com/api/tp-countries/"
+      Then Verify the updated last country has been updated
