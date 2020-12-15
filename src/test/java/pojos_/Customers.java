@@ -2,16 +2,13 @@ package pojos_;
 
 import com.sun.tools.xjc.reader.xmlschema.bindinfo.BIConversion;
 import org.apache.commons.lang3.builder.ToStringBuilder;
-import org.codehaus.jackson.annotate.JsonAnyGetter;
-import org.codehaus.jackson.annotate.JsonAnySetter;
-import org.codehaus.jackson.annotate.JsonIgnore;
-import org.codehaus.jackson.annotate.JsonProperty;
+import org.codehaus.jackson.annotate.*;
 
 import java.util.HashMap;
 import java.util.Map;
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Customers {
-    @JsonProperty("id")
+    @JsonIgnore
     private Integer id;
     @JsonProperty("firstName")
     private String firstName;
