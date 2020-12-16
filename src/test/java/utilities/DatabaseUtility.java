@@ -1,213 +1,124 @@
 package utilities;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class DatabaseUtility {
     private static Connection connection;
     private static Statement statement;
     private static ResultSet resultSet;
-    public static void createConnection() {
+    private static ResultSetMetaData rsmd;
+
+    /*  Creates connection before query execution .
+     * gets parameter already up in the fields inm this class
+     */
+    public static Connection createConnection() {
         String url = "jdbc:postgresql://157.230.48.97:5432/gmibank_db";
         String user = "techprodb_user";
         String password = "Techpro_@126";
         try {
+            DriverManager.registerDriver(new org.postgresql.Driver());
             connection = DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-    }
-    public static ResultSet getResultset() {
-        try {
-            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return resultSet;
+        return connection;
     }
 
-    private static void executeQuery(String query) {
+    /*
+     * executes a query and outputs a Resultset
+     */
+    public static ResultSet executeQuery(String query){
+        createConnection();
         try {
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        try {
             resultSet = statement.executeQuery(query);
+
         } catch (SQLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        }
-    }
+            System.out.println("\""+query+"\" query did not successfully execute!");
 
-    public static void createConnection(String url, String user, String password) {
-        try {
-            connection = DriverManager.getConnection(url, user, password);
-        } catch (SQLException e) {
-
-            e.printStackTrace();
-        }
-    }
-    public static void closeConnection() {
-        try {
-            if (resultSet != null) {
-                resultSet.close();
-            }
-            if (statement != null) {
-                statement.close();
-            }
-            if (connection != null) {
-                connection.close();
-            }
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-    public static ResultSet getResultSet() {
-        try {
-            statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
         }
         return resultSet;
     }
-    /**
-     *
-     * @param query
-     * @return returns a single cell value. If the results in multiple rows and/or
-     *         columns of data, only first column of the first row will be returned.
-     *         The rest of the data will be ignored
-     */
-    public static Object getCellValue(String query) {
-        return getQueryResultList(query).get(0).get(0);
-    }
-    /**
-     *
-     * @param query
-     * @return returns a list of Strings which represent a row of data. If the query
-     *         results in multiple rows and/or columns of data, only first row will
-     *         be returned. The rest of the data will be ignored
-     */
-    public static List<Object> getRowList(String query) {
-        return getQueryResultList(query).get(0);
-    }
-    /**
-     *
-     * @param query
-     * @return returns a map which represent a row of data where key is the column
-     *         name. If the query results in multiple rows and/or columns of data,
-     *         only first row will be returned. The rest of the data will be ignored
-     */
-    public static Map<String, Object> getRowMap(String query) {
-        return getQueryResultMap(query).get(0);
-    }
-    /**
-     *
-     * @param query
-     * @return returns query result in a list of lists where outer list represents
-     *         collection of rows and inner lists represent a single row
-     */
-    public static List<List<Object>> getQueryResultList(String query) {
-        executeQuery(query);
-        List<List<Object>> rowList = new ArrayList<>();
-        ResultSetMetaData rsmd;
-        try {
-            rsmd = resultSet.getMetaData();
-            while (resultSet.next()) {
-                List<Object> row = new ArrayList<>();
-                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
-                    row.add(resultSet.getObject(i));
-                }
-                rowList.add(row);
-            }
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return rowList;
-    }
-    /**
-     *
-     * @param query
-     * @param column
-     * @return list of values of a single column from the result set
-     */
-    public static List<Object> getColumnData(String query, String column) {
-        executeQuery(query);
-        List<Object> rowList = new ArrayList<>();
-        ResultSetMetaData rsmd;
-        try {
-            rsmd = resultSet.getMetaData();
-            while (resultSet.next()) {
-                rowList.add(resultSet.getObject(column));
-            }
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return rowList;
-    }
-    /**
-     *
-     * @param query
-     * @return returns query result in a list of maps where the list represents
-     *         collection of rows and a map represents represent a single row with
-     *         key being the column name
-     */
-    public static List<Map<String, Object>> getQueryResultMap(String query) {
-        executeQuery(query);
-        List<Map<String, Object>> rowList = new ArrayList<>();
-        ResultSetMetaData rsmd;
-        try {
-            rsmd = resultSet.getMetaData();
-            int colon_sayisi=rsmd.getColumnCount(); //ben ekledim
-            System.out.println("Toplam kolon sayisi= "+colon_sayisi);//ben ekledim
-            while (resultSet.next()) {
-                Map<String, Object> colNameValueMap = new HashMap<>();
-                for (int i = 1; i <= rsmd.getColumnCount(); i++) {
-                    colNameValueMap.put(rsmd.getColumnName(i), resultSet.getObject(i));
-                }
-                rowList.add(colNameValueMap);
 
-            }
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return rowList;
-    }
-    /**
-     *
-     * @param query
-     * @return List of columns returned in result set
+    /*
+     * brings the column names of a query Resultset
      */
-    public static List<String> getColumnNames(String query) {
-        executeQuery(query);
-        List<String> columns = new ArrayList<>();
-        ResultSetMetaData rsmd;
-        try {
-            rsmd = resultSet.getMetaData();
-            int columnCount = rsmd.getColumnCount();
-            for (int i = 1; i <= columnCount; i++) {
-                columns.add(rsmd.getColumnName(i));
-            }
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+    public static List<String> getColumnNames(ResultSet resultSet) throws SQLException {
+        ResultSetMetaData rsdm=resultSet.getMetaData();
+        List<String> listOfColumnNames=new LinkedList<>();
+        for (int i=1;i<=rsdm.getColumnCount();i++){
+            listOfColumnNames.add(rsdm.getColumnName(i));
         }
-        return columns;
+        return listOfColumnNames;
     }
 
-    public static int getRowCount() throws Exception {
-        resultSet.last();
-        int rowCount = resultSet.getRow();
-        return rowCount;
+    public static List<Map<String,String>> getResultSetAsAListOfMaps(ResultSet resultSet) throws SQLException {
+        ResultSetMetaData rsdm = resultSet.getMetaData();
+        int sizeOfColumns = rsdm.getColumnCount();
+        int sizeOfRows = resultSet.getFetchSize();
+        List<String> nameOfColumns = DatabaseUtility.getColumnNames(resultSet);
+
+        resultSet.beforeFirst();
+        List<Map<String, String>> listOfResultset = new ArrayList<>();
+
+        while (resultSet.next()) {
+            Map<String, String> mapOfEachRow = new HashMap<>();
+            for (int j = 0; j < sizeOfColumns; j++) {
+                mapOfEachRow.put(nameOfColumns.get(j), resultSet.getString(nameOfColumns.get(j)));
+            }
+
+            listOfResultset.add(mapOfEachRow);
+        }
+        return listOfResultset;
     }
+
+    public static List<Map<String,String>> getQueryAsAListOfMaps(String query) throws SQLException {
+        resultSet=executeQuery(query);
+        ResultSetMetaData rsdm=resultSet.getMetaData();
+        int sizeOfColumns=rsdm.getColumnCount();
+        int sizeOfRows=resultSet.getFetchSize();
+        List<String> nameOfColumns= DatabaseUtility.getColumnNames(resultSet);
+
+        resultSet.beforeFirst();
+        List<Map<String,String>> listOfResultset=new ArrayList<>();
+
+        while (resultSet.next()){
+            Map<String,String> mapOfEachRow=new HashMap<>();
+            for (int j=0;j<sizeOfColumns;j++)
+            {
+                mapOfEachRow.put(nameOfColumns.get(j),resultSet.getString(nameOfColumns.get(j)));
+            }
+
+            listOfResultset.add(mapOfEachRow);
+        }
+        return listOfResultset;
+    }
+
+    public static List<Map<String,String>> getEmployeesAsListOfMap() throws SQLException {
+        String query="SELECT * FROM public.tp_employee;";
+        return getQueryAsAListOfMaps(query);
+    }
+
+    public static Map<String,String> getEmployeeByLoginName(String loginName) throws SQLException {
+        String query="SELECT * FROM public.tp_employee WHERE ;";
+        return getQueryAsAListOfMaps(query).get(0);
+    }
+    //-----------------------------------------------------------------------------------
+    public static List<Map<String,String>> getUsersAsListOfMap() throws SQLException {
+        String query="SELECT * FROM public.jhi_user;";
+        return getQueryAsAListOfMaps(query);
+    }
+    public static Map<String,String> getUserByLoginName(String loginName) throws SQLException {
+        String query="SELECT * FROM public.jhi_user WHERE ;";
+        return getQueryAsAListOfMaps(query).get(0);
+    }
+
+    //-----------------------------------------------------------------------------------
+
+
 }
