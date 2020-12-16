@@ -5,3 +5,8 @@
       Given user sets all response using api endpoint "https://www.gmibank.com/api/tp-customers"
       And user deserializers country data as json to java
       Then user validates the data
+      @US20_TC02
+      Scenario: Read all customers
+        Given user sets all response using api endpoint "https://www.gmibank.com/api/tp-customers"
+        And user deserializers country data as json to java
+        Then user validates all data one by one

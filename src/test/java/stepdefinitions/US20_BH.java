@@ -2,6 +2,7 @@ package stepdefinitions;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
@@ -17,6 +18,8 @@ import utilities.DatabaseUtility;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
@@ -26,12 +29,14 @@ import static io.restassured.RestAssured.urlEncodingEnabled;
 
 public class US20_BH {
     Response response;
-    String filepath = ConfigurationReader.getProperty("filePath");
-    String bearer_token = ConfigurationReader.getProperty("api_barer_token");
-    Customers[] customers;
+  //  String filepath = ConfigurationReader.getProperty("filePath");
+   // String bearer_token = ConfigurationReader.getProperty("api_barer_token");
+     List<Object> customers;
     List<Map<String,Object>> customersMap;
-    String query;
+
     SoftAssert softAssert=new SoftAssert();
+    Gson gson=new Gson();
+
 
 
     @Given("user sets all response using api endpoint {string}")
@@ -48,26 +53,66 @@ public class US20_BH {
         Gson gson=new Gson();
         JsonPath jsonPath=response.jsonPath();
         jsonPath = response.jsonPath();
-        customersMap = jsonPath.getList("$");
+        customers= jsonPath.getList("$");
 
     }
 
     @Then("user validates the data")
     public void user_validates_the_data()  {
 
-        for (int i = 0; i < customers.length; i++){
-            Assert.assertEquals(customers[i].getSsn(),customersMap.get(i).get("ssn"));
+       JsonPath jsonPath = response.jsonPath();
+
+        for (int i = 0; i < customers.size(); i++) {
+
+          //  softAssert.assertEquals(jsonPath.getString("ssn"), customersMap.get(i));
+
+
+            List<String> actualList = jsonPath.getList("ssn");
+            System.out.println(actualList);
+            List<String>expectedList=jsonPath.getList("ssn");
+
+
+              for (int j = 0; j < expectedList.size(); j++) {
+
+               softAssert.assertEquals(actualList.get(i).trim(), expectedList.get(j));
+                  System.out.println(expectedList);
+               softAssert.assertAll();
+            }
 
 
         }
+    }
+    @Then("user validates all data one by one")
+    public void user_validates_all_data_one_by_one() {
+        JsonPath jsonPath = response.jsonPath();
+
+        for (int i = 0; i < customers.size(); i++) {
+
+            //  softAssert.assertEquals(jsonPath.getString("ssn"), customersMap.get(i));
 
 
+            List<String> actualList = jsonPath.getList("ssn");
+            System.out.println(actualList);
+            List<String>expectedList=jsonPath.getList("ssn");
+
+
+            for (int j = 0; j < expectedList.size(); j++) {
+
+                softAssert.assertEquals(actualList.get(1).trim(), expectedList.get(1));
+
+                System.out.println(expectedList);
+                softAssert.assertAll();
+            }
 
 
         }
-
 
     }
+
+}
+
+
+
 
 
 

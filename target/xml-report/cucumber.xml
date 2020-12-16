@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.909">
-<testcase classname="Validate all customer's info" name="Read all customers" time="4.167">
-<failure message="" type="java.lang.NullPointerException"><![CDATA[Given user sets all response using api endpoint "https://www.gmibank.com/api/tp-customers".passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="7.017">
+<testcase classname="Validate all customer's info" name="Read all customers" time="4.646">
+<failure message="The following asserts failed:&#10;&#9;expected [458-62-6584] but found [450-56-4994]" type="java.lang.AssertionError"><![CDATA[Given user sets all response using api endpoint "https://www.gmibank.com/api/tp-customers".passed
 And user deserializers country data as json to java.........................passed
 Then user validates the data................................................failed
 
 StackTrace:
-java.lang.NullPointerException
-	at stepdefinitions.US20_BH.user_validates_the_data(US20_BH.java:58)
+java.lang.AssertionError: The following asserts failed:
+	expected [458-62-6584] but found [450-56-4994]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+	at stepdefinitions.US20_BH.user_validates_the_data(US20_BH.java:79)
 	at ✽.user validates the data(file:///Users/bayram/Desktop/GMIBankTeam5/src/test/resources/features/US20_BH.feature:7)
 ]]></failure>
+</testcase>
+<testcase classname="Validate all customer's info" name="Read all customers 2" time="1.684">
+<system-out><![CDATA[Given user sets all response using api endpoint "https://www.gmibank.com/api/tp-customers".passed
+And user deserializers country data as json to java.........................passed
+Then user validates all data one by one.....................................passed
+]]></system-out>
 </testcase>
 </testsuite>
