@@ -1,1 +1,130 @@
-[]
+[
+  {
+    "line": 3,
+    "elements": [
+      {
+        "line": 5,
+        "name": "create connection",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1564000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user create a connection with db using \"jdbc:postgresql://157.230.48.97:5432/gmibank_db\", \"techprodb_user\" and \"Techpro_@126\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jdbc:postgresql://157.230.48.97:5432/gmibank_db\"",
+                  "offset": 39
+                },
+                {
+                  "val": "\"techprodb_user\"",
+                  "offset": 90
+                },
+                {
+                  "val": "\"Techpro_@126\"",
+                  "offset": 111
+                }
+              ],
+              "location": "stepdefinitions.CustomerDB_StepDefinitions.user_create_a_connection_with_db_using_and(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-17T22:38:51.294Z",
+        "line": 16,
+        "name": "read and validate data using DB",
+        "description": "",
+        "id": "validate-all-data-of-customers;read-and-validate-data-using-db;validate-all;2",
+        "after": [
+          {
+            "result": {
+              "duration": 6615000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 471000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user reads the Customers\u0027 data using \"Select  * from tp_customer;\" and \"ssn\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Select  * from tp_customer;\"",
+                  "offset": 37
+                },
+                {
+                  "val": "\"ssn\"",
+                  "offset": 71
+                }
+              ],
+              "location": "stepdefinitions.CustomerDB_StepDefinitions.user_reads_the_Customers_data_using_and(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validate the customer\u0027s data",
+            "match": {
+              "location": "stepdefinitions.CustomerDB_StepDefinitions.user_validate_the_customer_s_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user prints all using pdf",
+            "match": {
+              "location": "stepdefinitions.CustomerDB_StepDefinitions.user_prints_all_using_pdf()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CustomerDB"
+          }
+        ]
+      }
+    ],
+    "name": "validate all data of customers",
+    "description": "",
+    "id": "validate-all-data-of-customers",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/CustomerDB.feature",
+    "tags": [
+      {
+        "name": "@CustomerDB",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
