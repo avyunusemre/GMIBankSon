@@ -33,7 +33,8 @@ public class US27_StepDefinitions {
 
 
     @Given("Set states to response {string}")
-    public void setStatesToResponse(String url) {
+    public void
+    setStatesToResponse(String url) {
 
 
          Url=url;
