@@ -1,4 +1,4 @@
-@US26
+@US26 @Sprint2
   Feature: Update each country 1 by 1
 
     Background:
@@ -15,6 +15,6 @@
 
 
     @US26_TC002
-    Scenario: US26_TC002 : Update last country with PATCH request
+    Scenario: US26_TC002 : Update last country with PUT request
       And Send a PUT request to REST API endpoint and update last country "https://www.gmibank.com/api/tp-countries/"
       Then Verify the updated last country has been updated

@@ -210,4 +210,18 @@ public class DatabaseUtility {
         int rowCount = resultSet.getRow();
         return rowCount;
     }
+
+    public static Object getCellValuewithRowsAndCells(String query,int row, int cell) {
+        return getQueryResultList(query).get(row).get(cell);
+    }
+
+    public static void main(String[] args) {
+        String query = "Select * from jhi_user;";
+        createConnection("jdbc:postgresql://157.230.48.97:5432/gmibank_db","techprodb_user","Techpro_@126");
+        getColumnNames(query);
+        System.out.println( getColumnNames(query));
+        getColumnData(query,"first_name");
+        System.out.println(getColumnData(query,"first_name"));
+        System.out.println(getCellValuewithRowsAndCells(query,5,15));
+    }
 }
