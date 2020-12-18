@@ -21,7 +21,7 @@ public class CustomerDB_StepDefinitions {
 
     @Given("user create a connection with db using {string}, {string} and {string}")
     public void user_create_a_connection_with_db_using_and(String query, String userName, String password) {
-        DatabaseUtility.createConnection("jdbc:postgresql://157.230.48.97:5432/gmibank_db","techprodb_user","Techpro_@126");
+        DatabaseUtility.createConnection();
 
     }
 
@@ -48,7 +48,7 @@ public class CustomerDB_StepDefinitions {
     @Then("user prints all using pdf")
     public void user_prints_all_using_pdf() {
         String query = "Select * from tp_customer;";
-        DatabaseUtility.createConnection("jdbc:postgresql://157.230.48.97:5432/gmibank_db","techprodb_user","Techpro_@126");
+        DatabaseUtility.createConnection();
         List<Customers> listOfCustomers = new ArrayList<>();
 
 

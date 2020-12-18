@@ -1,5 +1,5 @@
-@Allcustomer
-  Feature: Validate all customer's info
+@Allcustomer @Sprint2
+  Feature: US20 : Validate all customer's info
     @US20_TC01
     Scenario: Read all customers
       Given user sets all response using api endpoint "https://www.gmibank.com/api/tp-customers"

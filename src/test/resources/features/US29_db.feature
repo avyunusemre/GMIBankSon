@@ -1,4 +1,4 @@
-@US29 database testing
+@US29 @Sprint2 database testing
   Feature: All database validation
     Background: Create connection with DataBase
     @US_29_TC001

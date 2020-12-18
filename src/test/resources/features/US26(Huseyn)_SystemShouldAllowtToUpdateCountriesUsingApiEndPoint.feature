@@ -1,4 +1,4 @@
-@US26_Huseyn
+@US26_Huseyn @Sprint2
   Feature: US_26 System should allow to update countries using api end point
 
 

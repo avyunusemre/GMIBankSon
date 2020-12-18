@@ -3,19 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "line": 3,
-        "name": "Create connection with DataBase",
+        "start_timestamp": "2020-12-18T22:11:51.790Z",
+        "line": 4,
+        "name": "Read all customers",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": []
-      },
-      {
-        "start_timestamp": "2020-12-18T21:08:34.083Z",
-        "line": 5,
-        "name": "Validate all data performing database testing",
-        "description": "",
-        "id": "all-database-validation;validate-all-data-performing-database-testing",
+        "id": "us20-:-validate-all-customer-s-info;read-all-customers",
         "after": [
           {
             "result": {
@@ -32,7 +24,1553 @@
         "steps": [
           {
             "result": {
-              "duration": 2023000000,
+              "duration": 5209000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user sets all response using api endpoint \"https://www.gmibank.com/api/tp-customers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-customers\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.US20_BH.user_sets_all_response_using_api_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 526000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user deserializers country data as json to java",
+            "match": {
+              "location": "stepdefinitions.US20_BH.user_deserializers_country_data_as_json_to_java()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The following asserts failed:\n\texpected [612-15-5726] but found [458-62-6584]\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)\r\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)\r\n\tat stepdefinitions.US20_BH.user_validates_the_data(US20_BH.java:79)\r\n\tat ✽.user validates the data(file:///C:/Users/deuav/IdeaProjects/GMIBankTeam5/src/test/resources/features/US20_BH.feature:7)\r\n",
+              "duration": 997000000,
+              "status": "failed"
+            },
+            "line": 7,
+            "name": "user validates the data",
+            "match": {
+              "location": "stepdefinitions.US20_BH.user_validates_the_data()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Allcustomer"
+          },
+          {
+            "name": "@Sprint2"
+          },
+          {
+            "name": "@US20_TC01"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:11:58.700Z",
+        "line": 9,
+        "name": "Read all customers",
+        "description": "",
+        "id": "us20-:-validate-all-customer-s-info;read-all-customers",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 740000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user sets all response using api endpoint \"https://www.gmibank.com/api/tp-customers\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-customers\"",
+                  "offset": 42
+                }
+              ],
+              "location": "stepdefinitions.US20_BH.user_sets_all_response_using_api_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user deserializers country data as json to java",
+            "match": {
+              "location": "stepdefinitions.US20_BH.user_deserializers_country_data_as_json_to_java()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 998000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user validates all data one by one",
+            "match": {
+              "location": "stepdefinitions.US20_BH.user_validates_all_data_one_by_one()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Allcustomer"
+          },
+          {
+            "name": "@Sprint2"
+          },
+          {
+            "name": "@US20_TC02"
+          }
+        ]
+      }
+    ],
+    "name": "US20 : Validate all customer\u0027s info",
+    "description": "",
+    "id": "us20-:-validate-all-customer-s-info",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US20_BH.feature",
+    "tags": [
+      {
+        "name": "@Allcustomer",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Sprint2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 806000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Set states to response \"https://www.gmibank.com/api/tp-states\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-states\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.US27_StepDefinitions.setStatesToResponse(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 478000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User convert to all states to pojo",
+            "match": {
+              "location": "stepdefinitions.US27_StepDefinitions.userConvertToAllStatesToPojo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:00.510Z",
+        "line": 9,
+        "name": "US22 TC_01",
+        "description": "",
+        "id": "us27-read-state;us22-tc-01",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Verify state name with given state id",
+            "match": {
+              "location": "stepdefinitions.US27_StepDefinitions.verifyStateNameWithGivenStateId(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "25390",
+                  "Koblenz"
+                ]
+              },
+              {
+                "cells": [
+                  "21564",
+                  "Haute-Normandie"
+                ]
+              },
+              {
+                "cells": [
+                  "21565",
+                  "Ile-de-France"
+                ]
+              },
+              {
+                "cells": [
+                  "21567",
+                  "Alsace"
+                ]
+              },
+              {
+                "cells": [
+                  "21569",
+                  "Auvergne"
+                ]
+              }
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 794000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Set states to response \"https://www.gmibank.com/api/tp-states\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-states\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.US27_StepDefinitions.setStatesToResponse(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User convert to all states to pojo",
+            "match": {
+              "location": "stepdefinitions.US27_StepDefinitions.userConvertToAllStatesToPojo()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:01.826Z",
+        "line": 19,
+        "name": "US22 TC_02",
+        "description": "",
+        "id": "us27-read-state;us22-tc-02",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Write all States in txt",
+            "match": {
+              "location": "stepdefinitions.US27_StepDefinitions.writeAllStatesInTxt()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Read txt file",
+            "match": {
+              "location": "stepdefinitions.US27_StepDefinitions.readTxtFile()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Verify that the given State id is within the States read from the file",
+            "match": {
+              "location": "stepdefinitions.US27_StepDefinitions.verifyThatTheGivenStateIdIsWithinTheStatesReadFromTheFile(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "25390"
+                ]
+              },
+              {
+                "cells": [
+                  "21564"
+                ]
+              },
+              {
+                "cells": [
+                  "21565"
+                ]
+              },
+              {
+                "cells": [
+                  "21567"
+                ]
+              },
+              {
+                "cells": [
+                  "21569"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2"
+          }
+        ]
+      }
+    ],
+    "name": "US27 Read State",
+    "description": "",
+    "id": "us27-read-state",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US22_States.feature",
+    "tags": [
+      {
+        "name": "@Sprint2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-18T22:12:02.693Z",
+        "line": 10,
+        "name": "System allow the user to create a state using valid endpoint",
+        "description": "",
+        "id": "us24-:-data-creations;system-allow-the-user-to-create-a-state-using-valid-endpoint;data;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 779000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get data with valid token and \"endpoint\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"endpoint\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.user_get_data_with_valid_and(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 27000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user verify status code 200 and content type JSon",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.user_verify_status_code_and_content_type_JSon(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 791000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user create a new \"NY\" one by one if it is not created already",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NY\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.user_create_a_new_one_by_one_if_it_is_not_created_already(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 186000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate \"NY\" is created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NY\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.validate_is_created(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:04.513Z",
+        "line": 11,
+        "name": "System allow the user to create a state using valid endpoint",
+        "description": "",
+        "id": "us24-:-data-creations;system-allow-the-user-to-create-a-state-using-valid-endpoint;data;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 707000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get data with valid token and \"endpoint\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"endpoint\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.user_get_data_with_valid_and(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user verify status code 200 and content type JSon",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.user_verify_status_code_and_content_type_JSon(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 608000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user create a new \"NJ\" one by one if it is not created already",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NJ\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.user_create_a_new_one_by_one_if_it_is_not_created_already(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate \"NJ\" is created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NJ\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.validate_is_created(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:05.843Z",
+        "line": 12,
+        "name": "System allow the user to create a state using valid endpoint",
+        "description": "",
+        "id": "us24-:-data-creations;system-allow-the-user-to-create-a-state-using-valid-endpoint;data;4",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 703000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user get data with valid token and \"endpoint\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"endpoint\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.user_get_data_with_valid_and(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user verify status code 200 and content type JSon",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.user_verify_status_code_and_content_type_JSon(java.lang.Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 612000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user create a new \"FL\" one by one if it is not created already",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FL\"",
+                  "offset": 18
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.user_create_a_new_one_by_one_if_it_is_not_created_already(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate \"FL\" is created",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"FL\"",
+                  "offset": 9
+                }
+              ],
+              "location": "stepdefinitions.US24_create_state_with_api_endpoint.validate_is_created(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2"
+          }
+        ]
+      }
+    ],
+    "name": "US24 : Data Creations",
+    "description": "",
+    "id": "us24-:-data-creations",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US24_CreateNewState.feature",
+    "tags": [
+      {
+        "name": "@Sprint2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-18T22:12:07.177Z",
+        "line": 6,
+        "name": "read all country",
+        "description": "",
+        "id": "us-25-read-and-create-all-country;read-all-country",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 762000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Tum data\u0027lari GET kullanarak ekranda görelim \"https://www.gmibank.com/api/tp-countries\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-countries\"",
+                  "offset": 45
+                }
+              ],
+              "location": "stepdefinitions.US25_StepDefinitions.tum_data_lari_GET_kullanarak_ekranda_görelim(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "http Status Code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefinitions.US25_StepDefinitions.http_Status_Code(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Oluşturulmuş herhangi bir datayi Array ile okuyalım.",
+            "match": {
+              "location": "stepdefinitions.US25_StepDefinitions.oluşturulmuş_herhangi_bir_datayi_Array_ile_okuyalım()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_25"
+          },
+          {
+            "name": "@Sprint2"
+          },
+          {
+            "name": "@US25_TC001"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:07.986Z",
+        "line": 11,
+        "name": "create all country",
+        "description": "",
+        "id": "us-25-read-and-create-all-country;create-all-country",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 615000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "POST kullanarak yeni data oluşturalım endpoint \"https://www.gmibank.com/api/tp-countries\" and create \"Finland\" country",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-countries\"",
+                  "offset": 47
+                },
+                {
+                  "val": "\"Finland\"",
+                  "offset": 101
+                }
+              ],
+              "location": "stepdefinitions.US25_StepDefinitions.post_kullanarak_yeni_data_oluşturalım_endpoint_and_create_country(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Oluşturulduktan sonra oluşturulan ülkeyi doğrulayalım \"Finland\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Finland\"",
+                  "offset": 54
+                }
+              ],
+              "location": "stepdefinitions.US25_StepDefinitions.oluşturulduktan_sonra_oluşturulan_ülkeyi_doğrulayalım(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US_25"
+          },
+          {
+            "name": "@Sprint2"
+          },
+          {
+            "name": "@US25_TC002"
+          }
+        ]
+      }
+    ],
+    "name": "US_25 read and create all country",
+    "description": "",
+    "id": "us-25-read-and-create-all-country",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US25_CreateNewCountries.feature",
+    "tags": [
+      {
+        "name": "@US_25",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Sprint2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 8
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 704000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Let\u0027s see all data on the screen using GET \"https://www.gmibank.com/api/tp-countries/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-countries/\"",
+                  "offset": 43
+                }
+              ],
+              "location": "stepdefinitions.US26_Huseyn_StepDefinitions.let_s_see_all_data_on_the_screen_using_GET(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "HTTP Status Code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 17
+                }
+              ],
+              "location": "stepdefinitions.US26_Huseyn_StepDefinitions.http_Status_Code(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Get all countries as De-Serialization",
+            "match": {
+              "location": "stepdefinitions.US26_Huseyn_StepDefinitions.get_all_countries_as_De_Serialization()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:08.621Z",
+        "line": 11,
+        "name": "Update countries with PUT",
+        "description": "",
+        "id": "us-26-system-should-allow-to-update-countries-using-api-end-point;update-countries-with-put",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2227000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Let\u0027s update the first ID country using PUT endpoint \"https://www.gmibank.com/api/tp-countries/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-countries/\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.US26_Huseyn_StepDefinitions.let_s_update_the_first_ID_country_using_PUT_endpoint(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "After creating with PUT, let\u0027s verify the country created",
+            "match": {
+              "location": "stepdefinitions.US26_Huseyn_StepDefinitions.after_creating_with_PUT_let_s_verify_the_country_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US26_Huseyn"
+          },
+          {
+            "name": "@Sprint2"
+          },
+          {
+            "name": "@US26_TC001_Huseyn"
+          }
+        ]
+      }
+    ],
+    "name": "US_26 System should allow to update countries using api end point",
+    "description": "",
+    "id": "us-26-system-should-allow-to-update-countries-using-api-end-point",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US26(Huseyn)_SystemShouldAllowtToUpdateCountriesUsingApiEndPoint.feature",
+    "tags": [
+      {
+        "name": "@US26_Huseyn",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Sprint2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 14
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 772000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send a GET request to REST API endpoint",
+            "match": {
+              "location": "stepdefinitions.US26_YEmre.send_a_GET_request_to_REST_API_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify the HTTP Status code",
+            "match": {
+              "location": "stepdefinitions.US26_YEmre.verify_the_HTTP_Status_code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "get all countries as De-Serialization",
+            "match": {
+              "location": "stepdefinitions.US26_YEmre.get_all_countries_as_De_Serialization()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:11.593Z",
+        "line": 11,
+        "name": "US26_TC001 : Update first country with PUT request",
+        "description": "",
+        "id": "us26-:-update-each-country-1-by-1;us26-tc001-:-update-first-country-with-put-request",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 635000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Send a PUT request to REST API endpoint and update first country \"https://www.gmibank.com/api/tp-countries/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-countries/\"",
+                  "offset": 65
+                }
+              ],
+              "location": "stepdefinitions.US26_YEmre.send_a_PUT_request_to_REST_API_endpoint_and_update_first_country(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"timestamp\" (class pojos_.Country), not marked as ignorable (3 known properties: \"states\", \"id\", \"name\"])\n at [Source: (String)\"{\n    \"timestamp\": \"2020-12-18T22:12:14.521+0000\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"message\": \"No message available\",\n    \"path\": \"/gmi-bank-backend-0.0.1-SNAPSHOT/api/tp-countries18928\"\n}\"; line: 2, column: 19] (through reference chain: pojos_.Country[\"timestamp\"])\r\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\r\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:823)\r\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1153)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1589)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1567)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)\r\n\tat stepdefinitions.US26_YEmre.verify_the_updated_country_has_been_updated(US26_YEmre.java:154)\r\n\tat ✽.Verify the updated country has been updated(file:///C:/Users/deuav/IdeaProjects/GMIBankTeam5/src/test/resources/features/US26_API(Y.Emre).feature:13)\r\n",
+              "duration": 601000000,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "Verify the updated country has been updated",
+            "match": {
+              "location": "stepdefinitions.US26_YEmre.verify_the_updated_country_has_been_updated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US26"
+          },
+          {
+            "name": "@Sprint2"
+          },
+          {
+            "name": "@US26_TC001"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 714000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send a GET request to REST API endpoint",
+            "match": {
+              "location": "stepdefinitions.US26_YEmre.send_a_GET_request_to_REST_API_endpoint()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify the HTTP Status code",
+            "match": {
+              "location": "stepdefinitions.US26_YEmre.verify_the_HTTP_Status_code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "get all countries as De-Serialization",
+            "match": {
+              "location": "stepdefinitions.US26_YEmre.get_all_countries_as_De_Serialization()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:13.626Z",
+        "line": 17,
+        "name": "US26_TC002 : Update last country with PUT request",
+        "description": "",
+        "id": "us26-:-update-each-country-1-by-1;us26-tc002-:-update-last-country-with-put-request",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 600000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Send a PUT request to REST API endpoint and update last country \"https://www.gmibank.com/api/tp-countries/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-countries/\"",
+                  "offset": 64
+                }
+              ],
+              "location": "stepdefinitions.US26_YEmre.send_a_PUT_request_to_REST_API_endpoint_and_update_last_country(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field \"timestamp\" (class pojos_.Country), not marked as ignorable (3 known properties: \"states\", \"id\", \"name\"])\n at [Source: (String)\"{\n    \"timestamp\": \"2020-12-18T22:12:16.464+0000\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"message\": \"No message available\",\n    \"path\": \"/gmi-bank-backend-0.0.1-SNAPSHOT/api/tp-countries57058\"\n}\"; line: 2, column: 19] (through reference chain: pojos_.Country[\"timestamp\"])\r\n\tat com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)\r\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:823)\r\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:1153)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1589)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1567)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:294)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:151)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4013)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3004)\r\n\tat stepdefinitions.US26_YEmre.verify_the_updated_last_country_has_been_updated(US26_YEmre.java:134)\r\n\tat ✽.Verify the updated last country has been updated(file:///C:/Users/deuav/IdeaProjects/GMIBankTeam5/src/test/resources/features/US26_API(Y.Emre).feature:19)\r\n",
+              "duration": 608000000,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "Verify the updated last country has been updated",
+            "match": {
+              "location": "stepdefinitions.US26_YEmre.verify_the_updated_last_country_has_been_updated()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US26"
+          },
+          {
+            "name": "@Sprint2"
+          },
+          {
+            "name": "@US26_TC002"
+          }
+        ]
+      }
+    ],
+    "name": "US26 : Update each country 1 by 1",
+    "description": "",
+    "id": "us26-:-update-each-country-1-by-1",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US26_API(Y.Emre).feature",
+    "tags": [
+      {
+        "name": "@US26",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Sprint2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 7
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 759000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Set states to response \"https://www.gmibank.com/api/tp-states\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-states\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.US27_StepDefinitions.setStatesToResponse(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User convert to all states to pojo",
+            "match": {
+              "location": "stepdefinitions.US27_StepDefinitions.userConvertToAllStatesToPojo()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:15.565Z",
+        "line": 17,
+        "name": "US27 TC01 delete states",
+        "description": "",
+        "id": "delete-state;us27-tc01-delete-states;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c204\u003e but was \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.GeneratedMethodAccessor142.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat stepdefinitions.US27_StepDefinitions.deleteStatesWithAndVerifyStatusCodeAs(US27_StepDefinitions.java:88)\r\n\tat ✽.Delete states with \"31052\" and verify status code as \"204\"(file:///C:/Users/deuav/IdeaProjects/GMIBankTeam5/src/test/resources/features/US27_DeleteStates.feature:12)\r\n",
+              "duration": 647000000,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "Delete states with \"31052\" and verify status code as \"204\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"31052\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"204\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.US27_StepDefinitions.deleteStatesWithAndVerifyStatusCodeAs(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Verify the state has been deleted",
+            "match": {
+              "location": "stepdefinitions.US27_StepDefinitions.verifyTheStateHasBeenDeleted()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 724000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Set states to response \"https://www.gmibank.com/api/tp-states\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-states\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinitions.US27_StepDefinitions.setStatesToResponse(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User convert to all states to pojo",
+            "match": {
+              "location": "stepdefinitions.US27_StepDefinitions.userConvertToAllStatesToPojo()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:17.002Z",
+        "line": 18,
+        "name": "US27 TC01 delete states",
+        "description": "",
+        "id": "delete-state;us27-tc01-delete-states;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: 1 expectation failed.\nExpected status code \u003c204\u003e but was \u003c500\u003e.\n\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)\r\n\tat org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:59)\r\n\tat org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:493)\r\n\tat io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:674)\r\n\tat sun.reflect.GeneratedMethodAccessor142.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:193)\r\n\tat org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:61)\r\n\tat org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:126)\r\n\tat io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)\r\n\tat io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:134)\r\n\tat io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)\r\n\tat io.restassured.internal.ValidatableResponseImpl.super$2$statusCode(ValidatableResponseImpl.groovy)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:107)\r\n\tat groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:323)\r\n\tat groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1262)\r\n\tat org.codehaus.groovy.runtime.ScriptBytecodeAdapter.invokeMethodOnSuperN(ScriptBytecodeAdapter.java:144)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy:142)\r\n\tat io.restassured.internal.ValidatableResponseImpl.statusCode(ValidatableResponseImpl.groovy)\r\n\tat stepdefinitions.US27_StepDefinitions.deleteStatesWithAndVerifyStatusCodeAs(US27_StepDefinitions.java:88)\r\n\tat ✽.Delete states with \"29449\" and verify status code as \"204\"(file:///C:/Users/deuav/IdeaProjects/GMIBankTeam5/src/test/resources/features/US27_DeleteStates.feature:12)\r\n",
+              "duration": 610000000,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "Delete states with \"29449\" and verify status code as \"204\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"29449\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"204\"",
+                  "offset": 53
+                }
+              ],
+              "location": "stepdefinitions.US27_StepDefinitions.deleteStatesWithAndVerifyStatusCodeAs(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Verify the state has been deleted",
+            "match": {
+              "location": "stepdefinitions.US27_StepDefinitions.verifyTheStateHasBeenDeleted()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2"
+          }
+        ]
+      }
+    ],
+    "name": "Delete State",
+    "description": "",
+    "id": "delete-state",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US27_DeleteStates.feature",
+    "tags": [
+      {
+        "name": "@Sprint2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Create connection with DataBase",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:18.362Z",
+        "line": 5,
+        "name": "Validate all data performing database testing",
+        "description": "",
+        "id": "all-database-validation;validate-all-data-performing-database-testing",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1036000000,
               "status": "passed"
             },
             "line": 6,
@@ -44,7 +1582,7 @@
           },
           {
             "result": {
-              "duration": 2492000000,
+              "duration": 1557000000,
               "status": "passed"
             },
             "line": 7,
@@ -56,7 +1594,7 @@
           },
           {
             "result": {
-              "duration": 8000000,
+              "duration": 2000000,
               "status": "passed"
             },
             "line": 8,
@@ -70,6 +1608,9 @@
         "tags": [
           {
             "name": "@US29"
+          },
+          {
+            "name": "@Sprint2"
           },
           {
             "name": "database"
@@ -91,7 +1632,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2020-12-18T21:08:38.869Z",
+        "start_timestamp": "2020-12-18T22:12:20.976Z",
         "line": 10,
         "name": "All countries\u0027 info should be retrieved by database and validated",
         "description": "",
@@ -111,7 +1652,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1279000000,
+              "duration": 872000000,
               "status": "passed"
             },
             "line": 11,
@@ -123,7 +1664,7 @@
           },
           {
             "result": {
-              "duration": 1397000000,
+              "duration": 976000000,
               "status": "passed"
             },
             "line": 12,
@@ -151,6 +1692,9 @@
             "name": "@US29"
           },
           {
+            "name": "@Sprint2"
+          },
+          {
             "name": "database"
           },
           {
@@ -170,7 +1714,7 @@
         "steps": []
       },
       {
-        "start_timestamp": "2020-12-18T21:08:41.574Z",
+        "start_timestamp": "2020-12-18T22:12:22.836Z",
         "line": 15,
         "name": "All states should related to USA should be  retrieved by database and validated",
         "description": "",
@@ -190,7 +1734,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1372000000,
+              "duration": 863000000,
               "status": "passed"
             },
             "line": 16,
@@ -202,7 +1746,7 @@
           },
           {
             "result": {
-              "duration": 1600000000,
+              "duration": 971000000,
               "status": "passed"
             },
             "line": 17,
@@ -214,7 +1758,6 @@
           },
           {
             "result": {
-              "duration": 2000000,
               "status": "passed"
             },
             "line": 18,
@@ -228,6 +1771,9 @@
         "tags": [
           {
             "name": "@US29"
+          },
+          {
+            "name": "@Sprint2"
           },
           {
             "name": "database"
@@ -256,7 +1802,7 @@
         }
       },
       {
-        "name": "database",
+        "name": "@Sprint2",
         "type": "Tag",
         "location": {
           "line": 1,
@@ -264,11 +1810,248 @@
         }
       },
       {
-        "name": "testing",
+        "name": "database",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 16
+        }
+      },
+      {
+        "name": "testing",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 25
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "connection",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 882000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Create a connection with DB using \"jdbc:postgresql://157.230.48.97:5432/gmibank_db\",\"techprodb_user\" and \"Techpro_@126\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"jdbc:postgresql://157.230.48.97:5432/gmibank_db\"",
+                  "offset": 34
+                },
+                {
+                  "val": "\"techprodb_user\"",
+                  "offset": 84
+                },
+                {
+                  "val": "\"Techpro_@126\"",
+                  "offset": 105
+                }
+              ],
+              "location": "stepdefinitions.US30_StepDefinitions.createAConnectionWithDBUsingAnd(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-18T22:12:24.681Z",
+        "line": 16,
+        "name": "read and validate data using DB",
+        "description": "",
+        "id": "us30-write-customers--data-to-pdf;read-and-validate-data-using-db;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1302000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Read Customers\u0027data using \"Select * from tp_customer;\" and \"ssn\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Select * from tp_customer;\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"ssn\"",
+                  "offset": 59
+                }
+              ],
+              "location": "stepdefinitions.US30_StepDefinitions.readCustomersDataUsingAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Validate the Customers\u0027data",
+            "match": {
+              "location": "stepdefinitions.US30_StepDefinitions.validateTheCustomersData()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2424000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Print Users\u0027 data to PDF",
+            "match": {
+              "location": "stepdefinitions.US30_StepDefinitions.printUsersDataToPDF()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2"
+          }
+        ]
+      }
+    ],
+    "name": "US30 Write Customers\u0027 data to PDF",
+    "description": "",
+    "id": "us30-write-customers--data-to-pdf",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US30_WriteCustomerPDF_1.feature",
+    "tags": [
+      {
+        "name": "@Sprint2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-18T22:12:29.322Z",
+        "line": 5,
+        "name": "US23_TC01 :Read all customers you created and validate them from your data set",
+        "description": "",
+        "id": "us23;us23-tc01-:read-all-customers-you-created-and-validate-them-from-your-data-set",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 766000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Send a GET request to REST API endpoint \"https://www.gmibank.com/api/tp-account-registrations\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.gmibank.com/api/tp-account-registrations\"",
+                  "offset": 40
+                }
+              ],
+              "location": "stepdefinitions.US_23_StepDefinitions_Ibr.send_a_GET_request_to_REST_API_endpoint(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify the Status Code",
+            "match": {
+              "location": "stepdefinitions.US_23_StepDefinitions_Ibr.verify_the_Status_Code()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 510000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Get all Applicant\u0027s info as De Serialization",
+            "match": {
+              "location": "stepdefinitions.US_23_StepDefinitions_Ibr.get_all_Applicant_s_info_as_De_Serialization()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Verify all customers you created",
+            "match": {
+              "location": "stepdefinitions.US_23_StepDefinitions_Ibr.verify_all_customers_you_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sprint2"
+          },
+          {
+            "name": "@US23"
+          }
+        ]
+      }
+    ],
+    "name": "US23",
+    "description": "",
+    "id": "us23",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/US_23_Registrition_Ibr.feature",
+    "tags": [
+      {
+        "name": "@Sprint2",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
         }
       }
     ]
