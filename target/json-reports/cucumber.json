@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1564000000,
+              "duration": 1658000000,
               "status": "passed"
             },
             "line": 6,
@@ -38,7 +38,7 @@
         ]
       },
       {
-        "start_timestamp": "2020-12-17T22:38:51.294Z",
+        "start_timestamp": "2020-12-18T15:28:03.169Z",
         "line": 16,
         "name": "read and validate data using DB",
         "description": "",
@@ -46,7 +46,7 @@
         "after": [
           {
             "result": {
-              "duration": 6615000000,
+              "duration": 7161000000,
               "status": "passed"
             },
             "match": {
@@ -59,7 +59,7 @@
         "steps": [
           {
             "result": {
-              "duration": 471000000,
+              "duration": 459000000,
               "status": "passed"
             },
             "line": 10,
@@ -81,7 +81,7 @@
           },
           {
             "result": {
-              "duration": 5000000,
+              "duration": 7000000,
               "status": "passed"
             },
             "line": 11,
@@ -93,7 +93,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 12,

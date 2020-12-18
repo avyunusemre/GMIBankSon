@@ -2,14 +2,21 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.restassured.http.ContentType;
 import org.junit.Assert;
+import utilities.ConfigurationReader;
 import utilities.DatabaseUtility;
 import utilities.ReadTxt;
+import utilities.WriteToTxt;
 
+import javax.xml.ws.Response;
 import java.util.ArrayList;
 import java.util.List;
 
+import static io.restassured.RestAssured.given;
+
 public class CustomerDB_StepDefinitions {
+
     List<Object> allSSNs = new ArrayList<>();
     List<String> listOfCurrentSSNs = new ArrayList<>();
 
@@ -27,13 +34,14 @@ public class CustomerDB_StepDefinitions {
             //System.out.println(allSSNs.get(i).toString().trim());
             listOfCurrentSSNs.add(allSSNs.get(i).toString().trim());
 
-
         }
     }
 
     @Given("user validate the customer's data")
     public void user_validate_the_customer_s_data() {
-        List<String> SSN = ReadTxt.returnCustomerSSNList("NewFile.txt");
+
+
+        ReadTxt.returnCustomerSSNList("NewFile.txt");
         Assert.assertTrue(listOfCurrentSSNs.containsAll(ReadTxt.returnCustomerSSNList("NewFile.txt")));
 
     }
