@@ -1,5 +1,5 @@
-@US29 @Sprint2 database testing
-  Feature: All database validation
+@US29 @Sprint2
+  Feature: US29 : All database validation
     Background: Create connection with DataBase
     @US_29_TC001
     Scenario: Validate all data performing database testing

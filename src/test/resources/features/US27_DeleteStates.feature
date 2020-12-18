@@ -1,5 +1,5 @@
 @Sprint2
-Feature: Delete State
+Feature: US27 : Delete State
 
   Background:
     Given Set states to response "https://www.gmibank.com/api/tp-states"

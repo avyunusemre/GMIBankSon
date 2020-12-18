@@ -8,6 +8,6 @@
       And Get all countries as De-Serialization
 
 @US26_TC001_Huseyn
-    Scenario: Update countries with PUT
+    Scenario: TC001 : Update countries with PUT
       And Let's update the first ID country using PUT endpoint "https://www.gmibank.com/api/tp-countries/"
       Then After creating with PUT, let's verify the country created
