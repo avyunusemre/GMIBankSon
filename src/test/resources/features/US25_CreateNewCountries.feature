@@ -1,4 +1,4 @@
-@US_25
+@US_25 @Sprint2
 
 
 Feature: US_25 read and create all country

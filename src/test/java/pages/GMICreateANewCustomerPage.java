@@ -86,17 +86,10 @@ public class GMICreateANewCustomerPage {
     public WebElement successMessage;
 
 
-<<<<<<< HEAD
-    
-    
-    
-    
-=======
 
-    //@FindBy(xpath ="//div[@role='alert']")
-   // public WebElement successMessage;
-
->>>>>>> main
+    
+    
+    
 
 
 }

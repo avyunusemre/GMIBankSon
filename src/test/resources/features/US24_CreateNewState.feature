@@ -1,5 +1,5 @@
-
-  Feature: Data Creations
+@Sprint2
+  Feature: US24 : Data Creations
     Scenario Outline: System allow the user to create a state using valid endpoint
       Given user get data with valid token and "endpoint"
       When user verify status code 200 and content type JSon

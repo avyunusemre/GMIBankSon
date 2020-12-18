@@ -1,4 +1,5 @@
-Feature:
+@Sprint2
+Feature:US23
 
   @US23
   Scenario: US23_TC01 :Read all customers you created and validate them from your data set

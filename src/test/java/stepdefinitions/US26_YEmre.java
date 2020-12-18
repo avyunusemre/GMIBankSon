@@ -24,8 +24,8 @@ public class US26_YEmre {
     Country newFirstCountry;
     Country newLastCountry;
     Country updatedCountry;
-    String updatedFirst = "Liberya";
-    String updatedLast = "Nauru";
+    String updatedFirst = "Kamil";
+    String updatedLast = "Alamanya";
     Response putResponse;
     Integer firstCountryId;
     Integer lastCountryId;
