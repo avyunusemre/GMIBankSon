@@ -3,14 +3,23 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2020-12-16T01:02:36.296Z",
-        "line": 4,
-        "name": "Read all customers",
+        "line": 3,
+        "name": "Create connection with DataBase",
         "description": "",
-        "id": "validate-all-customer-s-info;read-all-customers",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-12-18T21:08:34.083Z",
+        "line": 5,
+        "name": "Validate all data performing database testing",
+        "description": "",
+        "id": "all-database-validation;validate-all-data-performing-database-testing",
         "after": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -23,63 +32,70 @@
         "steps": [
           {
             "result": {
-              "duration": 3440000000,
+              "duration": 2023000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user sets all response using api endpoint \"https://www.gmibank.com/api/tp-customers\"",
+            "line": 6,
+            "name": "Create connection with DataBase",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"https://www.gmibank.com/api/tp-customers\"",
-                  "offset": 42
-                }
-              ],
-              "location": "stepdefinitions.US20_BH.user_sets_all_response_using_api_endpoint(java.lang.String)"
+              "location": "stepdefinitions.US29_DataBase.create_connection_with_DataBase()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 303000000,
+              "duration": 2492000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "user deserializers country data as json to java",
+            "line": 7,
+            "name": "I can from database all users\u0027 info about login withdraw",
             "match": {
-              "location": "stepdefinitions.US20_BH.user_deserializers_country_data_as_json_to_java()"
+              "location": "stepdefinitions.US29_DataBase.i_can_from_database_all_users_info_about_login_withdraw()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "error_message": "java.lang.AssertionError: The following asserts failed:\n\texpected [458-62-6584] but found [450-56-4994]\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)\n\tat stepdefinitions.US20_BH.user_validates_the_data(US20_BH.java:79)\n\tat ✽.user validates the data(file:///Users/bayram/Desktop/GMIBankTeam5/src/test/resources/features/US20_BH.feature:7)\n",
-              "duration": 725000000,
-              "status": "failed"
+              "duration": 8000000,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "user validates the data",
+            "line": 8,
+            "name": "I can verify login with database data",
             "match": {
-              "location": "stepdefinitions.US20_BH.user_validates_the_data()"
+              "location": "stepdefinitions.US29_DataBase.i_can_verify_login_with_database_data()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Allcustomer"
+            "name": "@US29"
           },
           {
-            "name": "@US20_TC01"
+            "name": "database"
+          },
+          {
+            "name": "testing"
+          },
+          {
+            "name": "@US_29_TC001"
           }
         ]
       },
       {
-        "start_timestamp": "2020-12-16T01:02:40.995Z",
-        "line": 9,
-        "name": "Read all customers",
+        "line": 3,
+        "name": "Create connection with DataBase",
         "description": "",
-        "id": "validate-all-customer-s-info;read-all-customers",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-12-18T21:08:38.869Z",
+        "line": 10,
+        "name": "All countries\u0027 info should be retrieved by database and validated",
+        "description": "",
+        "id": "all-database-validation;all-countries--info-should-be-retrieved-by-database-and-validated",
         "after": [
           {
             "result": {
@@ -95,69 +111,164 @@
         "steps": [
           {
             "result": {
-              "duration": 947000000,
+              "duration": 1279000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user sets all response using api endpoint \"https://www.gmibank.com/api/tp-customers\"",
+            "line": 11,
+            "name": "Create connection with DataBase",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"https://www.gmibank.com/api/tp-customers\"",
-                  "offset": 42
-                }
-              ],
-              "location": "stepdefinitions.US20_BH.user_sets_all_response_using_api_endpoint(java.lang.String)"
+              "location": "stepdefinitions.US29_DataBase.create_connection_with_DataBase()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 32000000,
+              "duration": 1397000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user deserializers country data as json to java",
+            "line": 12,
+            "name": "I can from database all countries\u0027 info withdraw",
             "match": {
-              "location": "stepdefinitions.US20_BH.user_deserializers_country_data_as_json_to_java()"
+              "location": "stepdefinitions.US29_DataBase.i_can_from_database_all_countries_info_withdraw()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 701000000,
+              "duration": 1000000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user validates all data one by one",
+            "line": 13,
+            "name": "I can verify all countries from database",
             "match": {
-              "location": "stepdefinitions.US20_BH.user_validates_all_data_one_by_one()"
+              "location": "stepdefinitions.US29_DataBase.i_can_verify_all_countries_from_database()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Allcustomer"
+            "name": "@US29"
           },
           {
-            "name": "@US20_TC02"
+            "name": "database"
+          },
+          {
+            "name": "testing"
+          },
+          {
+            "name": "@US_29_TC002"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Create connection with DataBase",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-12-18T21:08:41.574Z",
+        "line": 15,
+        "name": "All states should related to USA should be  retrieved by database and validated",
+        "description": "",
+        "id": "all-database-validation;all-states-should-related-to-usa-should-be--retrieved-by-database-and-validated",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1372000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Create connection with DataBase",
+            "match": {
+              "location": "stepdefinitions.US29_DataBase.create_connection_with_DataBase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1600000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I can from database all states in USA info withdraw",
+            "match": {
+              "location": "stepdefinitions.US29_DataBase.i_can_from_database_all_states_in_USA_info_withdraw()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I can verify all states in USA from database",
+            "match": {
+              "location": "stepdefinitions.US29_DataBase.i_can_verify_all_states_in_USA_from_database()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US29"
+          },
+          {
+            "name": "database"
+          },
+          {
+            "name": "testing"
+          },
+          {
+            "name": "@US_29_TC003"
           }
         ]
       }
     ],
-    "name": "Validate all customer\u0027s info",
+    "name": "All database validation",
     "description": "",
-    "id": "validate-all-customer-s-info",
+    "id": "all-database-validation",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US20_BH.feature",
+    "uri": "file:src/test/resources/features/US29_db.feature",
     "tags": [
       {
-        "name": "@Allcustomer",
+        "name": "@US29",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "database",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 7
+        }
+      },
+      {
+        "name": "testing",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 16
         }
       }
     ]
