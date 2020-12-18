@@ -1,3 +1,4 @@
+@Sprint2
 Feature: Delete State
 
   Background:
