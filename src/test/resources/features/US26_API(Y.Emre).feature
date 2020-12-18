@@ -1,11 +1,10 @@
 @US26 @Sprint2
-  Feature: Update each country 1 by 1
+  Feature: US26 : Update each country 1 by 1
 
     Background:
       Given Send a GET request to REST API endpoint
       And Verify the HTTP Status code
       And get all countries as De-Serialization
-
 
 
     @US26_TC001

@@ -8,7 +8,7 @@ import pojos_.Country;
 import pojos_.Customers;
 import pojos_.States;
 import utilities.DatabaseUtility;
-import utilities.PDFGenerator;
+import utilities.PDFGenarator;
 import utilities.ReadTxt;
 
 import java.io.BufferedReader;
@@ -104,7 +104,7 @@ public class US30_StepDefinitions {
         }
         System.out.println(listOfCustomer);
 
-        PDFGenerator.pdfGeneratorRowsAndCellsWithList(header,listOfCustomer,fileName);
+        PDFGenarator.pdfGeneratorRowsAndCellsWithList(header,listOfCustomer,fileName);
 
     }
 
