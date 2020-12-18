@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.409">
-<testcase classname="validate all data of customers" name="read and validate data using DB" time="10.65">
-<system-out><![CDATA[Given user create a connection with db using "jdbc:postgresql://157.230.48.97:5432/gmibank_db", "techprodb_user" and "Techpro_@126".passed
-Given user reads the Customers' data using "Select  * from tp_customer;" and "ssn".passed
-And user validate the customer's data.......................................passed
-Then user prints all using pdf..............................................passed
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="11.193">
+<testcase classname="All database validation" name="Validate all data performing database testing" time="4.669">
+<system-out><![CDATA[Given Create connection with DataBase.......................................passed
+And I can from database all users' info about login withdraw................passed
+Then I can verify login with database data..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="All database validation" name="All countries' info should be retrieved by database and validated" time="2.683">
+<system-out><![CDATA[Given Create connection with DataBase.......................................passed
+And I can from database all countries' info withdraw........................passed
+Then I can verify all countries from database...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="All database validation" name="All states should related to USA should be  retrieved by database and validated" time="2.979">
+<system-out><![CDATA[Given Create connection with DataBase.......................................passed
+And I can from database all states in USA info withdraw.....................passed
+Then I can verify all states in USA from database...........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

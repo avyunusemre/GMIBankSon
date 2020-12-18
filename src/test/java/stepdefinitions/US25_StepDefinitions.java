@@ -24,7 +24,7 @@ public class US25_StepDefinitions {
                 oauth2(ConfigurationReader.getProperty("token")).
                 when().
                 get(endpoint);
-        response.prettyPrint();
+//        response.prettyPrint();
     }
 
     @Given("http Status Code {int}")

@@ -1,52 +1,25 @@
 [
   {
-    "line": 3,
+    "line": 2,
     "elements": [
       {
-        "line": 5,
-        "name": "create connection",
+        "line": 3,
+        "name": "Create connection with DataBase",
         "description": "",
         "type": "background",
         "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 1535000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user create a connection with db using \"jdbc:postgresql://157.230.48.97:5432/gmibank_db\", \"techprodb_user\" and \"Techpro_@126\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"jdbc:postgresql://157.230.48.97:5432/gmibank_db\"",
-                  "offset": 39
-                },
-                {
-                  "val": "\"techprodb_user\"",
-                  "offset": 90
-                },
-                {
-                  "val": "\"Techpro_@126\"",
-                  "offset": 111
-                }
-              ],
-              "location": "stepdefinitions.CustomerDB_StepDefinitions.user_create_a_connection_with_db_using_and(java.lang.String,java.lang.String,java.lang.String)"
-            },
-            "keyword": "Given "
-          }
-        ]
+        "steps": []
       },
       {
-        "start_timestamp": "2020-12-18T17:17:57.099Z",
-        "line": 16,
-        "name": "read and validate data using DB",
+        "start_timestamp": "2020-12-18T21:08:34.083Z",
+        "line": 5,
+        "name": "Validate all data performing database testing",
         "description": "",
-        "id": "validate-all-data-of-customers;read-and-validate-data-using-db;validate-all;2",
+        "id": "all-database-validation;validate-all-data-performing-database-testing",
         "after": [
           {
             "result": {
-              "duration": 6926000000,
+              "duration": 1000000,
               "status": "passed"
             },
             "match": {
@@ -55,74 +28,247 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 457000000,
+              "duration": 2023000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "user reads the Customers\u0027 data using \"Select  * from tp_customer;\" and \"ssn\"",
+            "line": 6,
+            "name": "Create connection with DataBase",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"Select  * from tp_customer;\"",
-                  "offset": 37
-                },
-                {
-                  "val": "\"ssn\"",
-                  "offset": 71
-                }
-              ],
-              "location": "stepdefinitions.CustomerDB_StepDefinitions.user_reads_the_Customers_data_using_and(java.lang.String,java.lang.String)"
+              "location": "stepdefinitions.US29_DataBase.create_connection_with_DataBase()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 9000000,
+              "duration": 2492000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "user validate the customer\u0027s data",
+            "line": 7,
+            "name": "I can from database all users\u0027 info about login withdraw",
             "match": {
-              "location": "stepdefinitions.CustomerDB_StepDefinitions.user_validate_the_customer_s_data()"
+              "location": "stepdefinitions.US29_DataBase.i_can_from_database_all_users_info_about_login_withdraw()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1605000000,
+              "duration": 8000000,
               "status": "passed"
             },
-            "line": 12,
-            "name": "user prints all using pdf",
+            "line": 8,
+            "name": "I can verify login with database data",
             "match": {
-              "location": "stepdefinitions.CustomerDB_StepDefinitions.user_prints_all_using_pdf()"
+              "location": "stepdefinitions.US29_DataBase.i_can_verify_login_with_database_data()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@CustomerDB"
+            "name": "@US29"
+          },
+          {
+            "name": "database"
+          },
+          {
+            "name": "testing"
+          },
+          {
+            "name": "@US_29_TC001"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Create connection with DataBase",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-12-18T21:08:38.869Z",
+        "line": 10,
+        "name": "All countries\u0027 info should be retrieved by database and validated",
+        "description": "",
+        "id": "all-database-validation;all-countries--info-should-be-retrieved-by-database-and-validated",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1279000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Create connection with DataBase",
+            "match": {
+              "location": "stepdefinitions.US29_DataBase.create_connection_with_DataBase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1397000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I can from database all countries\u0027 info withdraw",
+            "match": {
+              "location": "stepdefinitions.US29_DataBase.i_can_from_database_all_countries_info_withdraw()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I can verify all countries from database",
+            "match": {
+              "location": "stepdefinitions.US29_DataBase.i_can_verify_all_countries_from_database()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US29"
+          },
+          {
+            "name": "database"
+          },
+          {
+            "name": "testing"
+          },
+          {
+            "name": "@US_29_TC002"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "Create connection with DataBase",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-12-18T21:08:41.574Z",
+        "line": 15,
+        "name": "All states should related to USA should be  retrieved by database and validated",
+        "description": "",
+        "id": "all-database-validation;all-states-should-related-to-usa-should-be--retrieved-by-database-and-validated",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepdefinitions.Hook.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1372000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Create connection with DataBase",
+            "match": {
+              "location": "stepdefinitions.US29_DataBase.create_connection_with_DataBase()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1600000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I can from database all states in USA info withdraw",
+            "match": {
+              "location": "stepdefinitions.US29_DataBase.i_can_from_database_all_states_in_USA_info_withdraw()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I can verify all states in USA from database",
+            "match": {
+              "location": "stepdefinitions.US29_DataBase.i_can_verify_all_states_in_USA_from_database()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@US29"
+          },
+          {
+            "name": "database"
+          },
+          {
+            "name": "testing"
+          },
+          {
+            "name": "@US_29_TC003"
           }
         ]
       }
     ],
-    "name": "validate all data of customers",
+    "name": "All database validation",
     "description": "",
-    "id": "validate-all-data-of-customers",
+    "id": "all-database-validation",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/CustomerDB.feature",
+    "uri": "file:src/test/resources/features/US29_db.feature",
     "tags": [
       {
-        "name": "@CustomerDB",
+        "name": "@US29",
         "type": "Tag",
         "location": {
           "line": 1,
           "column": 1
+        }
+      },
+      {
+        "name": "database",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 7
+        }
+      },
+      {
+        "name": "testing",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 16
         }
       }
     ]
