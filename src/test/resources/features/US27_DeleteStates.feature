@@ -1,4 +1,4 @@
-@US27
+@Sprint2
 Feature: Delete State
 
   Background:
