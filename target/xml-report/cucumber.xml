@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.293">
-<testcase classname="validate all data of customers" name="read and validate data using DB" time="9.409">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="11.409">
+<testcase classname="validate all data of customers" name="read and validate data using DB" time="10.65">
 <system-out><![CDATA[Given user create a connection with db using "jdbc:postgresql://157.230.48.97:5432/gmibank_db", "techprodb_user" and "Techpro_@126".passed
 Given user reads the Customers' data using "Select  * from tp_customer;" and "ssn".passed
 And user validate the customer's data.......................................passed

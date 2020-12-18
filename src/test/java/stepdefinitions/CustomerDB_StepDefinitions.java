@@ -4,10 +4,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
 import org.junit.Assert;
-import utilities.ConfigurationReader;
-import utilities.DatabaseUtility;
-import utilities.ReadTxt;
-import utilities.WriteToTxt;
+import pojos_.Country;
+import pojos_.Customers;
+import utilities.*;
 
 import javax.xml.ws.Response;
 import java.util.ArrayList;
@@ -48,7 +47,26 @@ public class CustomerDB_StepDefinitions {
 
     @Then("user prints all using pdf")
     public void user_prints_all_using_pdf() {
+        String query = "Select * from tp_customer;";
+        DatabaseUtility.createConnection("jdbc:postgresql://157.230.48.97:5432/gmibank_db","techprodb_user","Techpro_@126");
+        List<Customers> listOfCustomers = new ArrayList<>();
 
+
+        List<List<Object>> list = DatabaseUtility.getQueryResultList(query);
+        for (int i = 0; i < 10 ;i++) {
+            Customers customers = new Customers();
+            Country country = new Country();
+            customers.setFirstName(list.get(i).get(1).toString());
+            customers.setSsn(list.get(i).get(10).toString());
+            country.setName(list.get(i).get(8).toString());
+            customers.setState(list.get(i).get(14).toString());
+            customers.setCountry(country);
+            listOfCustomers.add(customers);
+        }
+        System.out.println(list);
+
+        PDFGenarator.pdfGeneratorRowsAndCellsWithList("AllCustomers",listOfCustomers,"AllApplicantData.pdf");
     }
+
 
 }
