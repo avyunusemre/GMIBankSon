@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="7.017">
-<testcase classname="Validate all customer's info" name="Read all customers" time="4.646">
-<failure message="The following asserts failed:&#10;&#9;expected [458-62-6584] but found [450-56-4994]" type="java.lang.AssertionError"><![CDATA[Given user sets all response using api endpoint "https://www.gmibank.com/api/tp-customers".passed
-And user deserializers country data as json to java.........................passed
-Then user validates the data................................................failed
-
-StackTrace:
-java.lang.AssertionError: The following asserts failed:
-	expected [458-62-6584] but found [450-56-4994]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at stepdefinitions.US20_BH.user_validates_the_data(US20_BH.java:79)
-	at ✽.user validates the data(file:///Users/bayram/Desktop/GMIBankTeam5/src/test/resources/features/US20_BH.feature:7)
-]]></failure>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="11.193">
+<testcase classname="All database validation" name="Validate all data performing database testing" time="4.669">
+<system-out><![CDATA[Given Create connection with DataBase.......................................passed
+And I can from database all users' info about login withdraw................passed
+Then I can verify login with database data..................................passed
+]]></system-out>
 </testcase>
-<testcase classname="Validate all customer's info" name="Read all customers 2" time="1.684">
-<system-out><![CDATA[Given user sets all response using api endpoint "https://www.gmibank.com/api/tp-customers".passed
-And user deserializers country data as json to java.........................passed
-Then user validates all data one by one.....................................passed
+<testcase classname="All database validation" name="All countries' info should be retrieved by database and validated" time="2.683">
+<system-out><![CDATA[Given Create connection with DataBase.......................................passed
+And I can from database all countries' info withdraw........................passed
+Then I can verify all countries from database...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="All database validation" name="All states should related to USA should be  retrieved by database and validated" time="2.979">
+<system-out><![CDATA[Given Create connection with DataBase.......................................passed
+And I can from database all states in USA info withdraw.....................passed
+Then I can verify all states in USA from database...........................passed
 ]]></system-out>
 </testcase>
 </testsuite>
