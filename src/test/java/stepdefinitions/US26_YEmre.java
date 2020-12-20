@@ -1,11 +1,10 @@
 package stepdefinitions;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.codehaus.jackson.map.ObjectMapper;
 import org.junit.Assert;
 import pojos_.Country;
 import utilities.ConfigurationReader;
@@ -13,7 +12,6 @@ import utilities.ConfigurationReader;
 import java.io.IOException;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.put;
 
 public class US26_YEmre {
 
@@ -24,8 +22,8 @@ public class US26_YEmre {
     Country newFirstCountry;
     Country newLastCountry;
     Country updatedCountry;
-    String updatedFirst = "Kamil";
-    String updatedLast = "Alamanya";
+    String updatedFirst = "Palau";
+    String updatedLast = "Nauru";
     Response putResponse;
     Integer firstCountryId;
     Integer lastCountryId;
@@ -68,7 +66,7 @@ public class US26_YEmre {
     public void send_a_PUT_request_to_REST_API_endpoint_and_update_first_country(String endpoint) throws IOException {
 
         firstCountryId = countries[0].getId();
-        System.out.println(firstCountryId);
+        System.out.println("first country id : " + firstCountryId);
 
 
         updatedCountry = new Country(firstCountryId, updatedFirst, null);
@@ -93,9 +91,9 @@ public class US26_YEmre {
     }
 
     @Given("Send a PUT request to REST API endpoint and update last country {string}")
-    public void send_a_PUT_request_to_REST_API_endpoint_and_update_last_country(String endpoint) throws JsonProcessingException {
+    public void send_a_PUT_request_to_REST_API_endpoint_and_update_last_country(String endpoint) throws IOException {
         lastCountryId = countries[countries.length-1].getId();
-        System.out.println(lastCountryId);
+        System.out.println("last country id : " + lastCountryId);
 
         updatedCountry = new Country(lastCountryId, updatedLast, null);
         String updated = obj.writeValueAsString(updatedCountry);
@@ -119,8 +117,7 @@ public class US26_YEmre {
     @Then("Verify the updated last country has been updated")
     public void verify_the_updated_last_country_has_been_updated() throws IOException {
 
-        response2 = given()
-                .headers(
+        response2 = given().headers(
                         "Authorization",
                         "Bearer " + ConfigurationReader.getProperty("token"),
                         "Content-Type",
@@ -128,7 +125,9 @@ public class US26_YEmre {
                         "Accept",
                         ContentType.JSON)
                 .when()
-                .get(ConfigurationReader.getProperty("api_countries_endpoint")+lastCountryId);
+                .get(ConfigurationReader.getProperty("api_countries_endpoint")+"/" + lastCountryId);
+
+        System.out.println("response2:");
         response2.prettyPrint();
 
         newLastCountry = obj.readValue(response2.asString(),Country.class);
@@ -139,8 +138,7 @@ public class US26_YEmre {
     @Then("Verify the updated country has been updated")
     public void verify_the_updated_country_has_been_updated() throws InterruptedException, IOException {
 
-        response2 = given()
-                .headers(
+        response2 = given().headers(
                         "Authorization",
                         "Bearer " + ConfigurationReader.getProperty("token"),
                         "Content-Type",
@@ -148,7 +146,9 @@ public class US26_YEmre {
                         "Accept",
                         ContentType.JSON)
                 .when()
-                .get(ConfigurationReader.getProperty("api_countries_endpoint")+firstCountryId);
+                .get(ConfigurationReader.getProperty("api_countries_endpoint")+ "/" + firstCountryId);
+
+        System.out.println("response2:");
         response2.prettyPrint();
 
         newFirstCountry = obj.readValue(response2.asString(),Country.class);
