@@ -1,5 +1,5 @@
-@Sprint2
-Feature: US27 Read State
+@US22 @Sprint2
+Feature: US22 Read State
 
   Background:
     Given Set states to response "https://www.gmibank.com/api/tp-states"

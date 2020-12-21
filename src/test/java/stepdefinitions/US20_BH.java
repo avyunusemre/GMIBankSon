@@ -33,6 +33,7 @@ public class US20_BH {
    // String bearer_token = ConfigurationReader.getProperty("api_barer_token");
      List<Object> customers;
     List<Map<String,Object>> customersMap;
+    JsonPath jsonPath;
 
     SoftAssert softAssert=new SoftAssert();
     Gson gson=new Gson();
@@ -51,8 +52,7 @@ public class US20_BH {
     @Given("user deserializers country data as json to java")
     public void user_deserializers_country_data_as_json_to_java() throws IOException {
         Gson gson=new Gson();
-        JsonPath jsonPath=response.jsonPath();
-        jsonPath = response.jsonPath();
+        jsonPath=response.jsonPath();
         customers= jsonPath.getList("$");
 
     }
@@ -60,31 +60,26 @@ public class US20_BH {
     @Then("user validates the data")
     public void user_validates_the_data()  {
 
-       JsonPath jsonPath = response.jsonPath();
+        jsonPath = response.jsonPath();
+
+        List<String> actualList = jsonPath.getList("ssn");
+        System.out.println(actualList);
+        List<String>expectedList=jsonPath.getList("ssn");
 
         for (int i = 0; i < customers.size(); i++) {
 
           //  softAssert.assertEquals(jsonPath.getString("ssn"), customersMap.get(i));
 
-
-            List<String> actualList = jsonPath.getList("ssn");
-            System.out.println(actualList);
-            List<String>expectedList=jsonPath.getList("ssn");
-
-
-              for (int j = 0; j < expectedList.size(); j++) {
-
-               softAssert.assertEquals(actualList.get(i).trim(), expectedList.get(j));
+               softAssert.assertEquals(actualList.get(i).trim(), expectedList.get(i));
                   System.out.println(expectedList);
                softAssert.assertAll();
             }
 
 
-        }
     }
     @Then("user validates all data one by one")
     public void user_validates_all_data_one_by_one() {
-        JsonPath jsonPath = response.jsonPath();
+        jsonPath = response.jsonPath();
 
         for (int i = 0; i < customers.size(); i++) {
 

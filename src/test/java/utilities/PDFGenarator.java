@@ -21,8 +21,8 @@ public class PDFGenarator {
             List<String> headers = new ArrayList<String>();
             headers.add("CustomerName");
             headers.add("SSNs");
-            headers.add("Country");
-            headers.add("State");
+            headers.add("City");
+            headers.add("E-Mail");
             headers.add("Zip codes");
             try{
                 PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(pdf_path));
@@ -42,8 +42,10 @@ public class PDFGenarator {
                 for(int i=0;i<list.size();i++ ) {
                     table.addCell(list.get(i).getFirstName());
                     table.addCell(list.get(i).getSsn());
-                    table.addCell(list.get(i).getCountry().getName());
-                    table.addCell(list.get(i).getState());
+                    table.addCell(list.get(i).getCity());
+                    table.addCell(list.get(i).getEmail());
+                    //table.addCell(list.get(i).getCountry().getName());
+                    //table.addCell(list.get(i).getState());
                     table.addCell(list.get(i).getZipCode());
                 }
                 document.add(table);
