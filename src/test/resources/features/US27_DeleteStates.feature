@@ -1,4 +1,4 @@
-@Sprint2
+@US27 @Sprint2
 Feature: US27 : Delete State
 
   Background:
@@ -14,6 +14,6 @@ Feature: US27 : Delete State
 
     Examples:
       | id    | statusCode |
-      | 31052 | 204        |
-      | 29449 | 204        |
+      | 57856 | 204        |
+      | 123 | 204        |
 

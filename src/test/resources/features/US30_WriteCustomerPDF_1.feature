@@ -1,4 +1,4 @@
-@Sprint2
+@US30 @Sprint2
 Feature: US30 : Write Customers' data to PDF
 
   Background: connection
